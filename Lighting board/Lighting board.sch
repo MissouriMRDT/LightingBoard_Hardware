@@ -226,7 +226,7 @@ U 1 1 5BD0353C
 P 3250 4350
 F 0 "Conn1C1" H 3377 4508 60  0000 L CNN
 F 1 "Molex_SL_02" H 3377 4402 60  0000 L CNN
-F 2 "MRDT_Connectors:MOLEX_SL_02_Vertical" H 3250 4250 60  0001 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 3250 4250 60  0001 C CNN
 F 3 "" H 3250 4250 60  0001 C CNN
 	1    3250 4350
 	1    0    0    -1  
@@ -295,7 +295,7 @@ U 1 1 5BD053FB
 P 3250 5300
 F 0 "Conn1D1" H 3377 5458 60  0000 L CNN
 F 1 "Molex_SL_02" H 3377 5352 60  0000 L CNN
-F 2 "MRDT_Connectors:MOLEX_SL_02_Vertical" H 3250 5200 60  0001 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 3250 5200 60  0001 C CNN
 F 3 "" H 3250 5200 60  0001 C CNN
 	1    3250 5300
 	1    0    0    -1  
@@ -326,10 +326,6 @@ Text GLabel 1700 4500 0    50   UnSpc ~ 0
 GND
 Text GLabel 1700 5450 0    50   UnSpc ~ 0
 GND
-Text GLabel 7950 2000 2    50   Output ~ 0
-Dout_NeoPxiel2
-Text Notes 8550 2150 2    50   ~ 0
-SPI MOSI(1)
 Wire Notes Line
 	8850 1650 8850 2950
 Wire Notes Line
@@ -369,63 +365,16 @@ Wire Wire Line
 	6100 4950 6350 4950
 Wire Wire Line
 	5800 4950 5650 4950
-Text GLabel 6350 5850 0    50   UnSpc ~ 0
-GND
-$Comp
-L Device:C C2
-U 1 1 5BD0A00B
-P 5500 5500
-F 0 "C2" H 5615 5546 50  0000 L CNN
-F 1 "10uF" H 5615 5455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5538 5350 50  0001 C CNN
-F 3 "~" H 5500 5500 50  0001 C CNN
-	1    5500 5500
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5350 5500 0    50   Input ~ 0
-5V
-Text GLabel 5650 5950 0    50   Input ~ 0
-Dout_NeoPixel2
-$Comp
-L MRDT_Connectors:Molex_SL_03 Conn2C2
-U 1 1 5BD0A013
-P 6550 6000
-F 0 "Conn2C2" H 6677 6208 60  0000 L CNN
-F 1 "Molex_SL_03" H 6677 6102 60  0000 L CNN
-F 2 "MRDT_Connectors:MOLEX_SL_03_Vertical" H 6550 6000 60  0001 C CNN
-F 3 "" H 6550 6000 60  0001 C CNN
-	1    6550 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 5750 6350 5500
-Wire Wire Line
-	5650 5500 6350 5500
-$Comp
-L Device:R R2
-U 1 1 5BD0A01B
-P 5950 5950
-F 0 "R2" V 5743 5950 50  0000 C CNN
-F 1 "1k" V 5834 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 5950 50  0001 C CNN
-F 3 "~" H 5950 5950 50  0001 C CNN
-	1    5950 5950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6100 5950 6350 5950
-Wire Wire Line
-	5800 5950 5650 5950
-Wire Notes Line
-	7550 6150 4900 6150
-Wire Notes Line
-	4900 6150 4900 4150
 Wire Notes Line
 	4900 4150 7550 4150
-Wire Notes Line
-	7550 4150 7550 6150
 Wire Wire Line
 	1700 5000 1700 5100
 Text GLabel 9500 5650 0    50   Input ~ 0
 V+Act
+Wire Notes Line
+	4900 4150 4900 5150
+Wire Notes Line
+	7550 4150 7550 5150
+Wire Notes Line
+	4900 5150 7550 5150
 $EndSCHEMATC
