@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_C
+# Device:C
 #
-DEF Device_C C 0 10 N Y 1 F N
+DEF Device:C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
+F1 "Device:C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +19,29 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Schottky
+# Device:C_Small
 #
-DEF Device_D_Schottky D 0 40 N N 1 F N
+DEF Device:C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device:C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:D_Schottky
+#
+DEF Device:D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Schottky" 0 -100 50 H V C CNN
+F1 "Device:D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -41,34 +59,34 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
+# Device:LED
 #
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
+DEF Device:LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device:LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
+ LED*
+ LED_SMD:*
+ LED_THT:*
 $ENDFPLIST
 DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# Device:R
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF Device:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -81,11 +99,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Lighting-board-rescue_AndersonPP-MRDT_Connectors
+# MRDT_Connectors:AndersonPP
 #
-DEF Lighting-board-rescue_AndersonPP-MRDT_Connectors Conn 0 0 N Y 4 L N
+DEF MRDT_Connectors:AndersonPP Conn 0 0 N Y 5 L N
 F0 "Conn" 150 -50 60 H V C CNN
-F1 "Lighting-board-rescue_AndersonPP-MRDT_Connectors" 100 250 60 H V C CNN
+F1 "MRDT_Connectors:AndersonPP" 100 250 60 H V C CNN
 F2 "" -150 -550 60 H I C CNN
 F3 "" -150 -550 60 H I C CNN
 DRAW
@@ -97,35 +115,15 @@ X GND 1 400 100 200 L 50 39 1 1 I
 X V+Log 2 400 100 200 L 50 39 2 1 I
 X V+Act 3 400 100 200 L 50 39 3 1 I
 X PV+ 4 400 100 200 L 50 39 4 1 I
+X ~ 1 400 100 200 L 50 39 5 1 I
 ENDDRAW
 ENDDEF
 #
-# Lighting-board-rescue_LDD-1500L-MRDT_Devices
+# MRDT_Connectors:Molex_SL_02
 #
-DEF Lighting-board-rescue_LDD-1500L-MRDT_Devices U 0 40 Y Y 1 F N
-F0 "U" 50 -50 60 H V C CNN
-F1 "Lighting-board-rescue_LDD-1500L-MRDT_Devices" 300 650 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S 0 600 500 0 0 1 0 N
-X +Vin 1 -200 550 200 R 50 50 1 1 P
-X +Vin 2 -200 450 200 R 50 50 1 1 P
-X PWM_In 3 -200 300 200 R 50 50 1 1 P
-X -Vin 4 -200 150 200 R 50 50 1 1 P
-X -Vin 5 -200 50 200 R 50 50 1 1 P
-X -Vout 6 700 50 200 L 50 50 1 1 P
-X -Vout 7 700 150 200 L 50 50 1 1 P
-X +Vout 8 700 450 200 L 50 50 1 1 P
-X +Vout 9 700 550 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Lighting-board-rescue_Molex_SL_02-MRDT_Connectors
-#
-DEF Lighting-board-rescue_Molex_SL_02-MRDT_Connectors Conn 0 40 Y Y 1 F N
+DEF MRDT_Connectors:Molex_SL_02 Conn 0 40 Y Y 1 F N
 F0 "Conn" 150 -50 60 H V C CNN
-F1 "Lighting-board-rescue_Molex_SL_02-MRDT_Connectors" 50 250 60 H V C CNN
+F1 "MRDT_Connectors:Molex_SL_02" 50 250 60 H V C CNN
 F2 "" 0 -100 60 H I C CNN
 F3 "" 0 -100 60 H I C CNN
 DRAW
@@ -135,11 +133,11 @@ X ~ 2 -200 50 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Lighting-board-rescue_Molex_SL_03-MRDT_Connectors
+# MRDT_Connectors:Molex_SL_03
 #
-DEF Lighting-board-rescue_Molex_SL_03-MRDT_Connectors Conn 0 40 Y Y 1 F N
+DEF MRDT_Connectors:Molex_SL_03 Conn 0 40 Y Y 1 F N
 F0 "Conn" 150 -50 60 H V C CNN
-F1 "Lighting-board-rescue_Molex_SL_03-MRDT_Connectors" 50 350 60 H V C CNN
+F1 "MRDT_Connectors:Molex_SL_03" 50 350 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -150,11 +148,52 @@ X ~ 3 -200 50 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Lighting-board-rescue_TM4C129E_Launchpad-MRDT_Shields
+# MRDT_Devices:LDD-1500L
 #
-DEF Lighting-board-rescue_TM4C129E_Launchpad-MRDT_Shields U 0 20 Y Y 8 L N
+DEF MRDT_Devices:LDD-1500L U 0 40 Y Y 1 F N
+F0 "U" 50 -50 60 H V C CNN
+F1 "MRDT_Devices:LDD-1500L" 300 650 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 0 600 500 0 0 1 0 N
+X -Vin 1 -200 150 200 R 50 50 1 1 P
+X -Vout 11 700 150 200 L 50 50 1 1 P
+X -Vout 12 700 50 200 L 50 50 1 1 P
+X +Vout 13 700 550 200 L 50 50 1 1 P
+X +Vout 14 700 450 200 L 50 50 1 1 P
+X -Vin 2 -200 50 200 R 50 50 1 1 P
+X PWM_In 21 -200 300 200 R 50 50 1 1 P
+X +Vin 23 -200 550 200 R 50 50 1 1 P
+X +Vin 24 -200 450 200 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MRDT_ICs:AP1059
+#
+DEF MRDT_ICs:AP1059 U 0 40 Y Y 1 F N
+F0 "U" 50 -50 60 H V C CNN
+F1 "MRDT_ICs:AP1059" 200 450 60 H V C CNN
+F2 "" -250 -100 60 H I C CNN
+F3 "" -250 -100 60 H I C CNN
+DRAW
+S 0 400 450 0 0 1 0 f
+X Vin 1 -200 350 200 R 50 50 1 1 I
+X Vout 2 -200 250 200 R 50 50 1 1 I
+X FB 3 -200 150 200 R 50 50 1 1 I
+X SD 4 -200 50 200 R 50 50 1 1 I
+X GND 5 650 50 200 L 50 50 1 1 I
+X GND 6 650 150 200 L 50 50 1 1 I
+X GND 7 650 250 200 L 50 50 1 1 I
+X GND 8 650 350 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# MRDT_Shields:TM4C129E_Launchpad
+#
+DEF MRDT_Shields:TM4C129E_Launchpad U 0 20 Y Y 8 L N
 F0 "U" 100 -50 60 H V C CNN
-F1 "Lighting-board-rescue_TM4C129E_Launchpad-MRDT_Shields" 100 1150 60 H V C CNN
+F1 "MRDT_Shields:TM4C129E_Launchpad" 100 1150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -250,41 +289,63 @@ X D2_5 Rese -200 550 200 R 50 50 8 1 I
 ENDDRAW
 ENDDEF
 #
-# MRDT_ICs_AP1059
+# power:+12VA
 #
-DEF MRDT_ICs_AP1059 U 0 40 Y Y 1 F N
-F0 "U" 50 -50 60 H V C CNN
-F1 "MRDT_ICs_AP1059" 200 450 60 H V C CNN
-F2 "" -250 -100 60 H I C CNN
-F3 "" -250 -100 60 H I C CNN
-DRAW
-S 0 400 450 0 0 1 0 f
-X Vin 1 -200 350 200 R 50 50 1 1 I
-X Vout 2 -200 250 200 R 50 50 1 1 I
-X FB 3 -200 150 200 R 50 50 1 1 I
-X SD 4 -200 50 200 R 50 50 1 1 I
-X GND 5 650 50 200 L 50 50 1 1 I
-X GND 6 650 150 200 L 50 50 1 1 I
-X GND 7 650 250 200 L 50 50 1 1 I
-X GND 8 650 350 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_SPDT
-#
-DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
-F0 "SW" 0 170 50 H V C CNN
-F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
+DEF power:+12VA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:+12VA" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C -80 0 20 0 0 0 N
-C 80 -100 20 0 0 0 N
-C 80 100 20 0 1 0 N
-P 2 0 1 0 -60 10 65 90 N
-X A 1 200 100 100 L 50 50 1 1 P
-X B 2 -200 0 100 R 50 50 1 1 P
-X C 3 200 -100 100 L 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12VA 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:+5V
+#
+DEF power:+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:GND
+#
+DEF power:GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice:INDUCTOR
+#
+DEF pspice:INDUCTOR L 0 0 N Y 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "pspice:INDUCTOR" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+X 1 1 -250 0 50 R 30 30 1 1 I
+X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #
