@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LightingBoard_Hardware-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -104,8 +105,6 @@ Text Notes 5900 1450 0    50   ~ 0
 SPI MOSI(3)
 Text Label 2450 3550 0    50   ~ 0
 Headlight_V1+
-Text Label 1950 1400 0    50   ~ 0
-+12V
 Wire Wire Line
 	1450 3400 1450 3450
 Text GLabel 1400 3650 0    50   Input ~ 0
@@ -177,72 +176,6 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5130 3650 50  0
 F 3 "~" H 5200 3650 50  0001 C CNN
 	1    5200 3650
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5BDE3ABA
-P 1800 1650
-F 0 "C2" H 1550 1650 50  0000 L CNN
-F 1 "10uF" H 1500 1750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1838 1500 50  0001 C CNN
-F 3 "~" H 1800 1650 50  0001 C CNN
-	1    1800 1650
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:D_Schottky D1
-U 1 1 5BDE4886
-P 2350 1700
-F 0 "D1" V 2350 1750 50  0000 L CNN
-F 1 "D_Schottky" V 2450 1750 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2350 1700 50  0001 C CNN
-F 3 "~" H 2350 1700 50  0001 C CNN
-	1    2350 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L pspice:INDUCTOR L1
-U 1 1 5BDE5512
-P 2100 1500
-F 0 "L1" H 2100 1350 50  0000 C CNN
-F 1 "47uH" H 2100 1450 50  0000 C CNN
-F 2 "LightingBoard_Hardware2:ETQ-P4M470YFN_Inductor" H 2100 1500 50  0001 C CNN
-F 3 "~" H 2100 1500 50  0001 C CNN
-	1    2100 1500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5BDE8642
-P 2900 1150
-F 0 "C3" V 2648 1150 50  0000 C CNN
-F 1 "10uF" V 2739 1150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2938 1000 50  0001 C CNN
-F 3 "~" H 2900 1150 50  0001 C CNN
-	1    2900 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 5C04B7FB
-P 1750 1500
-F 0 "#PWR0101" H 1750 1350 50  0001 C CNN
-F 1 "+5V" H 1765 1673 50  0000 C CNN
-F 2 "" H 1750 1500 50  0001 C CNN
-F 3 "" H 1750 1500 50  0001 C CNN
-	1    1750 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5C04B898
-P 3450 1500
-F 0 "#PWR0102" H 3450 1250 50  0001 C CNN
-F 1 "GND" H 3455 1327 50  0000 C CNN
-F 2 "" H 3450 1500 50  0001 C CNN
-F 3 "" H 3450 1500 50  0001 C CNN
-	1    3450 1500
-	1    0    0    -1  
 $EndComp
 Text Notes 925  900  0    197  ~ 39
 Power
@@ -325,12 +258,12 @@ $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5C07716C
-P 1350 2100
-F 0 "#PWR0108" H 1350 1850 50  0001 C CNN
-F 1 "GND" H 1355 1927 50  0000 C CNN
-F 2 "" H 1350 2100 50  0001 C CNN
-F 3 "" H 1350 2100 50  0001 C CNN
-	1    1350 2100
+P 2350 1800
+F 0 "#PWR0108" H 2350 1550 50  0001 C CNN
+F 1 "GND" H 2355 1627 50  0000 C CNN
+F 2 "" H 2350 1800 50  0001 C CNN
+F 3 "" H 2350 1800 50  0001 C CNN
+	1    2350 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -594,73 +527,10 @@ Wire Wire Line
 	4800 1800 4850 1800
 Wire Wire Line
 	4800 1900 4850 1900
-$Comp
-L MRDT_ICs:AP1059 U4
-U 1 1 5BDE0F64
-P 2700 1750
-F 0 "U4" H 3100 1700 60  0000 C CNN
-F 1 "AP1059" H 2900 2200 60  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2450 1650 60  0001 C CNN
-F 3 "" H 2450 1650 60  0001 C CNN
-	1    2700 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 1800 1100 1800
 Wire Wire Line
 	1050 2100 1350 2100
-Wire Wire Line
-	1050 1400 2500 1400
-Wire Wire Line
-	2500 1400 2500 1150
-Wire Wire Line
-	2500 1150 2750 1150
-Connection ~ 2500 1400
-Wire Wire Line
-	3050 1150 3350 1150
-Wire Wire Line
-	3350 1150 3350 1400
-Wire Wire Line
-	3350 1400 3350 1500
-Connection ~ 3350 1400
-Connection ~ 3350 1500
-Wire Wire Line
-	3350 1500 3350 1600
-Connection ~ 3350 1600
-Wire Wire Line
-	3350 1600 3350 1700
-Wire Wire Line
-	3350 1500 3450 1500
-Wire Wire Line
-	2500 1700 2500 1850
-Wire Wire Line
-	2500 1850 3350 1850
-Wire Wire Line
-	3350 1850 3350 1700
-Connection ~ 3350 1700
-Wire Wire Line
-	2350 1500 2500 1500
-Connection ~ 2500 1850
-Wire Wire Line
-	1750 1500 1800 1500
-Connection ~ 1800 1500
-Wire Wire Line
-	1800 1500 1850 1500
-Wire Wire Line
-	1800 1800 1800 1850
-Wire Wire Line
-	1800 1850 2350 1850
-Connection ~ 2350 1850
-Wire Wire Line
-	2350 1850 2500 1850
-Wire Wire Line
-	2350 1550 2350 1500
-Connection ~ 2350 1500
-Wire Wire Line
-	2500 1600 1850 1600
-Wire Wire Line
-	1850 1600 1850 1500
-Connection ~ 1850 1500
 $Comp
 L power:+12VA #PWR?
 U 1 1 5C0DFFB4
@@ -700,4 +570,86 @@ Wire Wire Line
 	5300 4050 5750 4050
 Wire Wire Line
 	5300 3850 5750 3850
+$Comp
+L MRDT_Devices:OKI U?
+U 1 1 5C15F42F
+P 2150 1500
+F 0 "U?" H 2200 1450 60  0001 C CNN
+F 1 "OKI" H 2350 1781 60  0000 C CNN
+F 2 "" H 1950 1400 60  0001 C CNN
+F 3 "" H 1950 1400 60  0001 C CNN
+	1    2150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1400 1850 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5C1613C0
+P 1350 2100
+F 0 "#PWR?" H 1350 1850 50  0001 C CNN
+F 1 "GND" H 1355 1927 50  0000 C CNN
+F 2 "" H 1350 2100 50  0001 C CNN
+F 3 "" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1700 2350 1750
+$Comp
+L power:+5V #PWR?
+U 1 1 5C1614A1
+P 2850 1400
+F 0 "#PWR?" H 2850 1250 50  0001 C CNN
+F 1 "+5V" H 2850 1550 50  0000 C CNN
+F 2 "" H 2850 1400 50  0001 C CNN
+F 3 "" H 2850 1400 50  0001 C CNN
+	1    2850 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1400 2800 1400
+$Comp
+L Device:C_Small C?
+U 1 1 5C167967
+P 2800 1550
+F 0 "C?" H 2950 1600 50  0000 L CNN
+F 1 "10uF" H 2900 1500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2838 1400 50  0001 C CNN
+F 3 "~" H 2800 1550 50  0001 C CNN
+	1    2800 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C1679DF
+P 1850 1550
+F 0 "C?" H 2000 1600 50  0000 L CNN
+F 1 "10uF" H 1950 1500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1888 1400 50  0001 C CNN
+F 3 "~" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1450 2800 1400
+Connection ~ 2800 1400
+Wire Wire Line
+	2800 1400 2850 1400
+Wire Wire Line
+	2800 1650 2800 1750
+Wire Wire Line
+	2800 1750 2350 1750
+Connection ~ 2350 1750
+Wire Wire Line
+	2350 1750 2350 1800
+Wire Wire Line
+	1850 1450 1850 1400
+Connection ~ 1850 1400
+Wire Wire Line
+	1850 1400 1050 1400
+Wire Wire Line
+	1850 1650 1850 1750
+Wire Wire Line
+	1850 1750 2350 1750
 $EndSCHEMATC
