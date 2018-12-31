@@ -12,7 +12,7 @@ Name the Headlight jacks and polarity
 
 Add "+5V" next to AP1509 on silkscreen
 
-Change Headlight PWN to 15 mil trace
+Change Headlight PWM to 15 mil trace
 
 Change Default ground plane to solid
 
@@ -22,7 +22,7 @@ Trace to R1 isn't connected properly
 
 LDD-1500L rename pin names to correct values
 
-Change ""Name1, Name 2" to our names and "Lighing Hardware" to "Lighting Board"
+Change ""Name1, Name 2" to our names and "Lighting Hardware" to "Lighting Board"
 
 Move Molex Connectors together
 

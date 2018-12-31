@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\nacht\Documents\GitHub\Lighting_Hardware\LightingBoard_Hardware\LightingBoard_Hardware.sch)
-    (date "12/15/2018 8:39:30 PM")
+    (date "12/15/2018 9:01:08 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U3)
       (value TM4C129E_Launchpad)
-      (footprint MRDT_Shields:TM4C129E_Launchpad_X9_Bottom_SMD)
+      (footprint MRDT_Shields:TM4C129E_Launchpad_X9_SMD)
       (libsource (lib MRDT_Shields) (part TM4C129E_Launchpad) (description "TIVA C Full Headers"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BCE41EC))
@@ -29,7 +29,7 @@
       (tstamp 5BCFE2EB))
     (comp (ref U1)
       (value LDD-1500L)
-      (footprint "Project Library:LDD-1500L_LED_DRIVER")
+      (footprint MRDT_Devices:LDD-1500L_LED_DRIVER)
       (libsource (lib MRDT_Devices) (part LDD-1500L) (description "LED Driver"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BCFF8F0))
@@ -41,7 +41,7 @@
       (tstamp 5BD0353C))
     (comp (ref U2)
       (value LDD-1500L)
-      (footprint "Project Library:LDD-1500L_LED_DRIVER")
+      (footprint MRDT_Devices:LDD-1500L_LED_DRIVER)
       (libsource (lib MRDT_Devices) (part LDD-1500L) (description "LED Driver"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BD053EE))
