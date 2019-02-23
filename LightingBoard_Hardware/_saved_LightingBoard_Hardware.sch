@@ -184,12 +184,12 @@ Wire Notes Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5C05151B
-P 4700 1300
-F 0 "#PWR0103" H 4700 1050 50  0001 C CNN
-F 1 "GND" H 4705 1127 50  0000 C CNN
-F 2 "" H 4700 1300 50  0001 C CNN
-F 3 "" H 4700 1300 50  0001 C CNN
-	1    4700 1300
+P 4000 1300
+F 0 "#PWR0103" H 4000 1050 50  0001 C CNN
+F 1 "GND" H 4005 1127 50  0000 C CNN
+F 2 "" H 4000 1300 50  0001 C CNN
+F 3 "" H 4000 1300 50  0001 C CNN
+	1    4000 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -518,8 +518,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 1300 5900 1300
 Wire Wire Line
-	4850 1300 4700 1300
-Wire Wire Line
 	4800 1800 4850 1800
 Wire Wire Line
 	4800 1900 4850 1900
@@ -831,16 +829,18 @@ Wire Notes Line
 	10325 475  10325 5075
 Wire Notes Line
 	475  5075 10325 5075
-Text GLabel 6725 2000 0    50   Input ~ 0
+Text GLabel 4800 1400 0    50   Input ~ 0
 Headlight_Power
-Text GLabel 6725 2100 0    50   Input ~ 0
+Text GLabel 5900 1700 2    50   Input ~ 0
 NeoPixel_White
-Text GLabel 6725 2200 0    50   Input ~ 0
+Text GLabel 5900 1800 2    50   Input ~ 0
 NeoPixel_Pattern
 Wire Wire Line
-	6725 2000 6800 2000
+	5850 1700 5900 1700
 Wire Wire Line
-	6725 2100 6800 2100
+	5850 1800 5900 1800
 Wire Wire Line
-	6725 2200 6800 2200
+	4850 1400 4800 1400
+Wire Wire Line
+	4000 1300 4850 1300
 $EndSCHEMATC
