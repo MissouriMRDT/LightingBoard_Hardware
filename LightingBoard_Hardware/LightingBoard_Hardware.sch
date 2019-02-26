@@ -15,18 +15,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LightingBoard_Hardware-rescue:TM4C129E_Launchpad-MRDT_Shields U3
+L MRDT_Shields:TM4C129E_Launchpad U3
 U 2 1 5BCE41EC
 P 7000 2250
 F 0 "U3" H 6800 3400 60  0000 L CNN
-F 1 "TM4C129E_Launchpad" H 5875 2200 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 5900 2250 60  0000 L CNN
 F 2 "MRDT_Shields:TM4C129E_Launchpad_X9_SMD" H 7000 2250 60  0001 C CNN
 F 3 "" H 7000 2250 60  0001 C CNN
 	2    7000 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L LightingBoard_Hardware-rescue:TM4C129E_Launchpad-MRDT_Shields U3
+L MRDT_Shields:TM4C129E_Launchpad U3
 U 3 1 5BCE44EF
 P 5650 2250
 F 0 "U3" H 5700 3400 60  0000 L CNN
@@ -39,7 +39,7 @@ $EndComp
 Text GLabel 5900 1300 2    50   Output ~ 0
 Dout_NeoPixel
 $Comp
-L LightingBoard_Hardware-rescue:TM4C129E_Launchpad-MRDT_Shields U3
+L MRDT_Shields:TM4C129E_Launchpad U3
 U 4 1 5BCE45EC
 P 5050 2250
 F 0 "U3" H 5100 3400 60  0000 L CNN
@@ -74,7 +74,7 @@ F 3 "" H 500 950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LightingBoard_Hardware-rescue:TM4C129E_Launchpad-MRDT_Shields U3
+L MRDT_Shields:TM4C129E_Launchpad U3
 U 1 1 5BCFEC8C
 P 7600 2250
 F 0 "U3" H 7630 3527 60  0001 C CNN
@@ -173,12 +173,12 @@ Wire Notes Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5C05151B
-P 4000 1300
-F 0 "#PWR0103" H 4000 1050 50  0001 C CNN
-F 1 "GND" H 4005 1127 50  0000 C CNN
-F 2 "" H 4000 1300 50  0001 C CNN
-F 3 "" H 4000 1300 50  0001 C CNN
-	1    4000 1300
+P 4700 1300
+F 0 "#PWR0103" H 4700 1050 50  0001 C CNN
+F 1 "GND" H 4705 1127 50  0000 C CNN
+F 2 "" H 4700 1300 50  0001 C CNN
+F 3 "" H 4700 1300 50  0001 C CNN
+	1    4700 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -425,7 +425,11 @@ Wire Wire Line
 Wire Notes Line
 	8100 2950 10325 2950
 Wire Notes Line
+	10325 2950 10325 475 
+Wire Notes Line
 	3700 475  10325 475 
+Wire Notes Line
+	475  5075 8100 5075
 Wire Notes Line
 	8100 475  8100 5075
 $Comp
@@ -504,6 +508,8 @@ Wire Wire Line
 	6700 1300 6800 1300
 Wire Wire Line
 	5850 1300 5900 1300
+Wire Wire Line
+	4850 1300 4700 1300
 Wire Wire Line
 	4800 1800 4850 1800
 Wire Wire Line
@@ -633,206 +639,6 @@ Wire Wire Line
 	1850 1650 1850 1750
 Wire Wire Line
 	1850 1750 2350 1750
-<<<<<<< HEAD
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5C71B575
-P 8675 3625
-F 0 "SW1" H 8675 3800 50  0000 C CNN
-F 1 "SW_Push" H 8675 3525 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 8675 3825 50  0001 C CNN
-F 3 "" H 8675 3825 50  0001 C CNN
-	1    8675 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5C71B620
-P 8675 4125
-F 0 "SW2" H 8675 4300 50  0000 C CNN
-F 1 "SW_Push" H 8675 4025 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 8675 4325 50  0001 C CNN
-F 3 "" H 8675 4325 50  0001 C CNN
-	1    8675 4125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5C71B6A3
-P 8675 4625
-F 0 "SW3" H 8675 4825 50  0000 C CNN
-F 1 "SW_Push" H 8675 4525 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 8675 4825 50  0001 C CNN
-F 3 "" H 8675 4825 50  0001 C CNN
-	1    8675 4625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8475 3625 8325 3625
-Wire Wire Line
-	8475 4125 8325 4125
-Wire Wire Line
-	8475 4625 8325 4625
-Wire Wire Line
-	8875 4625 9125 4625
-Wire Wire Line
-	8875 4125 9125 4125
-Wire Wire Line
-	8875 3625 9125 3625
-$Comp
-L Device:R R5
-U 1 1 5C72AAB4
-P 9350 3825
-F 0 "R5" V 9450 3825 50  0000 C CNN
-F 1 "10K" V 9350 3750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 3825 50  0001 C CNN
-F 3 "~" H 9350 3825 50  0001 C CNN
-	1    9350 3825
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5C72AC1D
-P 9350 4325
-F 0 "R6" V 9450 4325 50  0000 C CNN
-F 1 "10K" V 9350 4325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 4325 50  0001 C CNN
-F 3 "~" H 9350 4325 50  0001 C CNN
-	1    9350 4325
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5C72AC93
-P 9350 4825
-F 0 "R7" V 9450 4825 50  0000 C CNN
-F 1 "10K" V 9350 4825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 4825 50  0001 C CNN
-F 3 "~" H 9350 4825 50  0001 C CNN
-	1    9350 4825
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9125 3825 9200 3825
-Wire Wire Line
-	9125 3625 9125 3825
-Wire Wire Line
-	9125 4125 9125 4325
-Wire Wire Line
-	9125 4325 9200 4325
-Wire Wire Line
-	9125 4625 9125 4825
-Wire Wire Line
-	9125 4825 9200 4825
-Wire Wire Line
-	9125 3625 9500 3625
-Connection ~ 9125 3625
-Wire Wire Line
-	9125 4125 9500 4125
-Connection ~ 9125 4125
-Wire Wire Line
-	9125 4625 9500 4625
-Connection ~ 9125 4625
-Text GLabel 9500 4625 2    50   Output ~ 0
-NeoPixel_Pattern
-Text GLabel 9500 4125 2    50   Output ~ 0
-NeoPixel_White
-Text GLabel 9500 3625 2    50   Output ~ 0
-Headlight_Power
-$Comp
-L power:GND #PWR0117
-U 1 1 5C7360D7
-P 9575 4825
-F 0 "#PWR0117" H 9575 4575 50  0001 C CNN
-F 1 "GND" H 9580 4652 50  0000 C CNN
-F 2 "" H 9575 4825 50  0001 C CNN
-F 3 "" H 9575 4825 50  0001 C CNN
-	1    9575 4825
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5C736134
-P 9575 4325
-F 0 "#PWR0118" H 9575 4075 50  0001 C CNN
-F 1 "GND" H 9580 4152 50  0000 C CNN
-F 2 "" H 9575 4325 50  0001 C CNN
-F 3 "" H 9575 4325 50  0001 C CNN
-	1    9575 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 5C736196
-P 9575 3825
-F 0 "#PWR0119" H 9575 3575 50  0001 C CNN
-F 1 "GND" H 9580 3652 50  0000 C CNN
-F 2 "" H 9575 3825 50  0001 C CNN
-F 3 "" H 9575 3825 50  0001 C CNN
-	1    9575 3825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 3825 9575 3825
-Wire Wire Line
-	9500 4325 9575 4325
-Wire Wire Line
-	9500 4825 9575 4825
-$Comp
-L power:+5V #PWR0120
-U 1 1 5C73BD34
-P 8325 3625
-F 0 "#PWR0120" H 8325 3475 50  0001 C CNN
-F 1 "+5V" H 8340 3798 50  0000 C CNN
-F 2 "" H 8325 3625 50  0001 C CNN
-F 3 "" H 8325 3625 50  0001 C CNN
-	1    8325 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 5C73BDBA
-P 8325 4125
-F 0 "#PWR0121" H 8325 3975 50  0001 C CNN
-F 1 "+5V" H 8340 4298 50  0000 C CNN
-F 2 "" H 8325 4125 50  0001 C CNN
-F 3 "" H 8325 4125 50  0001 C CNN
-	1    8325 4125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0122
-U 1 1 5C73BE60
-P 8325 4625
-F 0 "#PWR0122" H 8325 4475 50  0001 C CNN
-F 1 "+5V" H 8340 4798 50  0000 C CNN
-F 2 "" H 8325 4625 50  0001 C CNN
-F 3 "" H 8325 4625 50  0001 C CNN
-	1    8325 4625
-	1    0    0    -1  
-$EndComp
-Text Notes 8275 3250 0    197  ~ 39
-Push Buttons
-Wire Notes Line
-	10325 475  10325 5075
-Wire Notes Line
-	475  5075 10325 5075
-Text GLabel 4800 1400 0    50   Input ~ 0
-Headlight_Power
-Text GLabel 5900 1700 2    50   Input ~ 0
-NeoPixel_White
-Text GLabel 5900 1800 2    50   Input ~ 0
-NeoPixel_Pattern
-Wire Wire Line
-	5850 1700 5900 1700
-Wire Wire Line
-	5850 1800 5900 1800
-Wire Wire Line
-	4850 1400 4800 1400
-Wire Wire Line
-	4000 1300 4850 1300
-=======
 Wire Wire Line
 	4900 3650 5350 3650
->>>>>>> Ryan's-Branch
 $EndSCHEMATC
