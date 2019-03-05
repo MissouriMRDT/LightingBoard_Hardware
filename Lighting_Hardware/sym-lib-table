@@ -12,4 +12,6 @@
   (lib (name MRDT_Switches)(type Legacy)(uri C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Switches.lib)(options "")(descr ""))
   (lib (name LightingBoard_Hardware)(type Legacy)(uri C:/Users/bohnj/Documents/GitHub/Lighting_Hardware/Libraries/Devices/LightingBoard_Hardware.lib)(options "")(descr ""))
   (lib (name LightingBoard_Hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/LightingBoard_Hardware-rescue.lib)(options "")(descr ""))
+  (lib (name knacro+5v)(type Legacy)(uri C:/Users/nacht/Documents/GitHub/Lighting_Hardware/Libraries/Devices/knacro+5v.lib)(options "")(descr ""))
+  (lib (name LDD-1500l)(type Legacy)(uri C:/Users/nacht/Documents/GitHub/Lighting_Hardware/Libraries/Devices/LDD-1500l.lib)(options "")(descr ""))
 )
