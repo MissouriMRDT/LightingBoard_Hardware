@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Shields:Raspberry_Pi U?
+U 1 1 5FADC0AA
+P 2450 3350
+F 0 "U?" H 2750 5547 60  0000 C CNN
+F 1 "Raspberry_Pi" H 2750 5441 60  0000 C CNN
+F 2 "" H 2450 4500 60  0001 C CNN
+F 3 "" H 2450 4500 60  0001 C CNN
+	1    2450 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 2500 2    39   Output ~ 0
+SD2_ChipSelect
+Wire Wire Line
+	3250 2500 3600 2500
+Text GLabel 1950 2500 0    39   Output ~ 0
+SD2_SerialClock
+Wire Wire Line
+	2250 2500 1950 2500
+Text GLabel 1950 2400 0    39   Output ~ 0
+SD2_SerialData_InTX
+Wire Wire Line
+	2250 2400 1950 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0B6
+P 3900 1700
+F 0 "#PWR?" H 3900 1450 50  0001 C CNN
+F 1 "GND" H 3905 1527 50  0000 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1600 3900 1600
+Wire Wire Line
+	3900 1600 3900 1700
+$Comp
+L power:+5V #PWR?
+U 1 1 5FADC0BE
+P 3250 1250
+F 0 "#PWR?" H 3250 1100 50  0001 C CNN
+F 1 "+5V" H 3265 1423 50  0000 C CNN
+F 2 "" H 3250 1250 50  0001 C CNN
+F 3 "" H 3250 1250 50  0001 C CNN
+	1    3250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1400 3250 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0C5
+P 4200 2100
+F 0 "#PWR?" H 4200 1850 50  0001 C CNN
+F 1 "GND" H 4205 1927 50  0000 C CNN
+F 2 "" H 4200 2100 50  0001 C CNN
+F 3 "" H 4200 2100 50  0001 C CNN
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2000 4200 2100
+Wire Wire Line
+	3250 2000 4200 2000
+Text GLabel 1950 2300 0    39   Input ~ 0
+Sd2_SerialData_OutRX
+Wire Wire Line
+	2250 2300 1950 2300
+Text GLabel 3600 2600 2    39   Output ~ 0
+SD1_ChipSelect
+Wire Wire Line
+	3250 2600 3600 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0D1
+P 3500 3050
+F 0 "#PWR?" H 3500 2800 50  0001 C CNN
+F 1 "GND" H 3505 2877 50  0000 C CNN
+F 2 "" H 3500 3050 50  0001 C CNN
+F 3 "" H 3500 3050 50  0001 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0D7
+P 3650 2900
+F 0 "#PWR?" H 3650 2650 50  0001 C CNN
+F 1 "GND" H 3655 2727 50  0000 C CNN
+F 2 "" H 3650 2900 50  0001 C CNN
+F 3 "" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2300 4450 2350
+Wire Wire Line
+	3250 2300 4450 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0DF
+P 4450 2350
+F 0 "#PWR?" H 4450 2100 50  0001 C CNN
+F 1 "GND" H 4455 2177 50  0000 C CNN
+F 2 "" H 4450 2350 50  0001 C CNN
+F 3 "" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1800 1950 1800
+Wire Wire Line
+	1950 1800 1950 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0E7
+P 1950 1850
+F 0 "#PWR?" H 1950 1600 50  0001 C CNN
+F 1 "GND" H 1955 1677 50  0000 C CNN
+F 2 "" H 1950 1850 50  0001 C CNN
+F 3 "" H 1950 1850 50  0001 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2600 1700 2600
+Wire Wire Line
+	1700 2600 1700 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0EF
+P 1700 2700
+F 0 "#PWR?" H 1700 2450 50  0001 C CNN
+F 1 "GND" H 1705 2527 50  0000 C CNN
+F 2 "" H 1700 2700 50  0001 C CNN
+F 3 "" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FADC0F5
+P 2150 3350
+F 0 "#PWR?" H 2150 3100 50  0001 C CNN
+F 1 "GND" H 2155 3177 50  0000 C CNN
+F 2 "" H 2150 3350 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+	1    2150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3300 2150 3300
+Wire Wire Line
+	2150 3300 2150 3350
+Wire Wire Line
+	3250 3000 3500 3000
+Wire Wire Line
+	3500 3000 3500 3050
+Wire Wire Line
+	3250 2800 3650 2800
+Wire Wire Line
+	3650 2800 3650 2900
+$EndSCHEMATC
