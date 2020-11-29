@@ -45,7 +45,7 @@ U 1 1 5F92B704
 P 6300 1150
 F 0 "C7" H 6415 1196 50  0000 L CNN
 F 1 "10uF" H 6415 1105 50  0000 L CNN
-F 2 "" H 6338 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6338 1000 50  0001 C CNN
 F 3 "~" H 6300 1150 50  0001 C CNN
 	1    6300 1150
 	1    0    0    -1  
@@ -54,28 +54,28 @@ Wire Wire Line
 	6800 750  6700 750 
 Wire Wire Line
 	6700 1150 6800 1150
-Text GLabel 1200 600  0    50   Input ~ 0
-Headlight_OnOff
+Text GLabel 900  1750 3    50   Input ~ 0
+LightToggle
 $Comp
 L MRDT_Connectors:Molex_SL_02 Conn2
 U 1 1 5FA16F6F
-P 3000 850
-F 0 "Conn2" H 3127 1008 60  0000 L CNN
-F 1 "Molex_SL_02" H 3127 902 60  0000 L CNN
-F 2 "" H 3000 750 60  0001 C CNN
-F 3 "" H 3000 750 60  0001 C CNN
-	1    3000 850 
+P 2600 1000
+F 0 "Conn2" H 2727 1158 60  0000 L CNN
+F 1 "Molex_SL_02" H 2727 1052 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 2600 900 60  0001 C CNN
+F 3 "" H 2600 900 60  0001 C CNN
+	1    2600 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L MRDT_Connectors:Molex_SL_02 Conn3
 U 1 1 5FA16FD3
-P 3000 1350
-F 0 "Conn3" H 3127 1508 60  0000 L CNN
-F 1 "Molex_SL_02" H 3127 1402 60  0000 L CNN
-F 2 "" H 3000 1250 60  0001 C CNN
-F 3 "" H 3000 1250 60  0001 C CNN
-	1    3000 1350
+P 2550 1450
+F 0 "Conn3" H 2677 1608 60  0000 L CNN
+F 1 "Molex_SL_02" H 2677 1502 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 2550 1350 60  0001 C CNN
+F 3 "" H 2550 1350 60  0001 C CNN
+	1    2550 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -84,7 +84,7 @@ U 1 1 5FA19930
 P 7000 1300
 F 0 "Conn4" H 7127 1508 60  0000 L CNN
 F 1 "Molex_SL_03" H 7127 1402 60  0000 L CNN
-F 2 "" H 7000 1300 60  0001 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_03_Horizontal" H 7000 1300 60  0001 C CNN
 F 3 "" H 7000 1300 60  0001 C CNN
 	1    7000 1300
 	1    0    0    -1  
@@ -93,100 +93,6 @@ Wire Wire Line
 	6500 900  6500 1050
 Wire Wire Line
 	6700 750  6700 1150
-$Comp
-L MRDT_Devices:OKI U?
-U 1 1 5FC35DE0
-P 1050 1950
-AR Path="/5FC35DE0" Ref="U?"  Part="1" 
-AR Path="/5FAAE5BC/5FC35DE0" Ref="U3"  Part="1" 
-F 0 "U3" H 1100 1900 60  0001 C CNN
-F 1 "OKI" H 1250 2231 60  0000 C CNN
-F 2 "" H 850 1850 60  0001 C CNN
-F 3 "" H 850 1850 60  0001 C CNN
-	1    1050 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5FC35DE6
-P 700 1800
-AR Path="/5FC35DE6" Ref="#PWR?"  Part="1" 
-AR Path="/5FAAE5BC/5FC35DE6" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 700 1650 50  0001 C CNN
-F 1 "+12V" H 715 1973 50  0000 C CNN
-F 2 "" H 700 1800 50  0001 C CNN
-F 3 "" H 700 1800 50  0001 C CNN
-	1    700  1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5FC35DEC
-P 700 2000
-AR Path="/5FC35DEC" Ref="C?"  Part="1" 
-AR Path="/5FAAE5BC/5FC35DEC" Ref="C5"  Part="1" 
-F 0 "C5" H 792 2046 50  0000 L CNN
-F 1 "10uF" H 792 1955 50  0000 L CNN
-F 2 "" H 700 2000 50  0001 C CNN
-F 3 "~" H 700 2000 50  0001 C CNN
-	1    700  2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5FC35DF2
-P 1800 2000
-AR Path="/5FC35DF2" Ref="C?"  Part="1" 
-AR Path="/5FAAE5BC/5FC35DF2" Ref="C6"  Part="1" 
-F 0 "C6" H 1892 2046 50  0000 L CNN
-F 1 "10uF" H 1892 1955 50  0000 L CNN
-F 2 "" H 1800 2000 50  0001 C CNN
-F 3 "~" H 1800 2000 50  0001 C CNN
-	1    1800 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FC35DF8
-P 1250 2250
-AR Path="/5FC35DF8" Ref="#PWR?"  Part="1" 
-AR Path="/5FAAE5BC/5FC35DF8" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 1250 2000 50  0001 C CNN
-F 1 "GND" H 1255 2077 50  0000 C CNN
-F 2 "" H 1250 2250 50  0001 C CNN
-F 3 "" H 1250 2250 50  0001 C CNN
-	1    1250 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1800 700  1850
-Wire Wire Line
-	850  1850 700  1850
-Connection ~ 700  1850
-Wire Wire Line
-	700  1850 700  1900
-Wire Wire Line
-	1650 1850 1800 1850
-Wire Wire Line
-	1800 1850 1800 1900
-Wire Wire Line
-	700  2100 700  2200
-Wire Wire Line
-	700  2200 1250 2200
-Wire Wire Line
-	1800 2200 1800 2100
-Wire Wire Line
-	1250 2150 1250 2200
-Connection ~ 1250 2200
-Wire Wire Line
-	1250 2200 1800 2200
-Wire Wire Line
-	1250 2250 1250 2200
-Text GLabel 1900 1850 2    50   Output ~ 0
-LED_5V
-Wire Wire Line
-	1900 1850 1800 1850
-Connection ~ 1800 1850
 $Comp
 L power:+5V #PWR0113
 U 1 1 5FC3A137
@@ -198,78 +104,105 @@ F 3 "" H 6500 900 50  0001 C CNN
 	1    6500 900 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 5FC3C4F3
-P 1250 1100
-F 0 "Q1" V 1501 1100 50  0000 C CNN
-F 1 "BSS138" V 1592 1100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1450 1025 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1250 1100 50  0001 L CNN
-	1    1250 1100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1200 600  1250 600 
-Wire Wire Line
-	1250 850  1250 900 
-Text GLabel 950  1200 0    50   Input ~ 0
-LED_5V
-Wire Wire Line
-	950  1200 1050 1200
+	900  1450 900  1400
 $Comp
 L Device:R_Small R1
 U 1 1 5FC46FD1
-P 1250 750
-F 0 "R1" H 1100 750 50  0000 L CNN
-F 1 "480" V 1250 700 39  0000 L CNN
-F 2 "" H 1250 750 50  0001 C CNN
-F 3 "~" H 1250 750 50  0001 C CNN
-	1    1250 750 
-	1    0    0    -1  
+P 900 1550
+F 0 "R1" H 750 1550 50  0000 L CNN
+F 1 "480" V 900 1500 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 900 1550 50  0001 C CNN
+F 3 "~" H 900 1550 50  0001 C CNN
+	1    900  1550
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1250 650  1250 600 
-Text GLabel 1500 1200 2    50   Output ~ 0
-LED_ON_5V
-Wire Wire Line
-	1450 1200 1500 1200
-Text GLabel 2750 700  0    50   Input ~ 0
-LED_ON_5V
-Text GLabel 2750 1200 0    50   Input ~ 0
-LED_ON_5V
 $Comp
 L power:GND #PWR0114
 U 1 1 5FC50E76
-P 2700 850
-F 0 "#PWR0114" H 2700 600 50  0001 C CNN
-F 1 "GND" H 2705 677 50  0000 C CNN
-F 2 "" H 2700 850 50  0001 C CNN
-F 3 "" H 2700 850 50  0001 C CNN
-	1    2700 850 
+P 2300 1000
+F 0 "#PWR0114" H 2300 750 50  0001 C CNN
+F 1 "GND" H 2305 827 50  0000 C CNN
+F 2 "" H 2300 1000 50  0001 C CNN
+F 3 "" H 2300 1000 50  0001 C CNN
+	1    2300 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 850  2700 800 
+	2300 1000 2300 950 
 Wire Wire Line
-	2700 800  2800 800 
-Wire Wire Line
-	2800 700  2750 700 
-Wire Wire Line
-	2800 1200 2750 1200
+	2300 950  2400 950 
 $Comp
 L power:GND #PWR0115
 U 1 1 5FC54D27
-P 2700 1350
-F 0 "#PWR0115" H 2700 1100 50  0001 C CNN
-F 1 "GND" H 2705 1177 50  0000 C CNN
-F 2 "" H 2700 1350 50  0001 C CNN
-F 3 "" H 2700 1350 50  0001 C CNN
-	1    2700 1350
+P 2250 1450
+F 0 "#PWR0115" H 2250 1200 50  0001 C CNN
+F 1 "GND" H 2255 1277 50  0000 C CNN
+F 2 "" H 2250 1450 50  0001 C CNN
+F 3 "" H 2250 1450 50  0001 C CNN
+	1    2250 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 1350 2700 1300
+	2250 1400 2350 1400
+$Comp
+L MultimediaAndBlackBoxBoard:BDJ2GA5WEFJ U3
+U 1 1 5FC36AC2
+P 1400 1300
+F 0 "U3" H 1400 1625 50  0000 C CNN
+F 1 "BDJ2GA5WEFJ" H 1400 1534 50  0000 C CNN
+F 2 "Package_SO:HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.2mm" H 1250 1350 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxga5wefj-e.pdf" H 1250 1350 50  0001 C CNN
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2700 1300 2800 1300
+	950  1400 900  1400
+Wire Wire Line
+	950  1200 800  1200
+Wire Wire Line
+	800  1200 800  1250
+$Comp
+L power:GND #PWR04
+U 1 1 5FC3AB0D
+P 800 1250
+F 0 "#PWR04" H 800 1000 50  0001 C CNN
+F 1 "GND" H 805 1077 50  0000 C CNN
+F 2 "" H 800 1250 50  0001 C CNN
+F 3 "" H 800 1250 50  0001 C CNN
+	1    800  1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1650 900  1750
+$Comp
+L power:+12VA #PWR05
+U 1 1 5FC3C86A
+P 1900 1150
+F 0 "#PWR05" H 1900 1000 50  0001 C CNN
+F 1 "+12VA" H 1915 1323 50  0000 C CNN
+F 2 "" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1300 2150 1300
+Wire Wire Line
+	2150 1300 2150 850 
+Connection ~ 2150 1300
+Wire Wire Line
+	1850 1200 1900 1200
+Wire Wire Line
+	1900 1200 1900 1150
+Wire Wire Line
+	1850 1400 2150 1400
+Wire Wire Line
+	2150 1400 2150 1300
+Wire Wire Line
+	2400 850  2150 850 
+Wire Wire Line
+	2250 1450 2250 1400
+Wire Wire Line
+	2350 1300 2150 1300
 $EndSCHEMATC

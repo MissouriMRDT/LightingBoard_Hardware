@@ -20,7 +20,7 @@ U 1 1 5FADC0AA
 P 1500 2900
 F 0 "U6" H 1800 5097 60  0000 C CNN
 F 1 "Raspberry_Pi" H 1800 4991 60  0000 C CNN
-F 2 "" H 1500 4050 60  0001 C CNN
+F 2 "MRDT_Shields:RaspberryPi_THT_BOTTOM" H 1500 4050 60  0001 C CNN
 F 3 "" H 1500 4050 60  0001 C CNN
 	1    1500 2900
 	1    0    0    -1  
@@ -51,8 +51,6 @@ F 3 "" H 700 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	700  2850 700  2900
-Text GLabel 2410 1950 2    50   Output ~ 0
-Headlight_OnOff
 Text GLabel 2400 2150 2    50   Output ~ 0
 Dout_NeoPixel
 Text GLabel 1200 1950 0    50   Output ~ 0
@@ -61,14 +59,10 @@ Text GLabel 1200 1650 0    50   Output ~ 0
 SD_Select
 Text GLabel 1200 1850 0    50   Input ~ 0
 SD_RX
-Text GLabel 1200 1550 0    50   Input ~ 0
-SD_CD
 Wire Wire Line
 	2410 1950 2300 1950
 Wire Wire Line
 	2300 2150 2400 2150
-Wire Wire Line
-	1300 1550 1200 1550
 Wire Wire Line
 	1300 1650 1200 1650
 Wire Wire Line
@@ -153,4 +147,7 @@ NoConn ~ 1300 1750
 NoConn ~ 1300 1450
 NoConn ~ 1300 1250
 NoConn ~ 1300 950 
+Text GLabel 2410 1950 2    50   Output ~ 0
+LightToggle
+NoConn ~ 1300 1550
 $EndSCHEMATC

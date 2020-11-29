@@ -18,23 +18,23 @@ NoConn ~ 9650 400
 $Comp
 L 4xxx:4050 U5
 U 1 1 5FC7EE41
-P 7900 2100
-F 0 "U5" H 7820 2150 50  0000 C CNN
-F 1 "4050" H 7850 2080 50  0000 C CNN
-F 2 "" H 7900 2100 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7900 2100 50  0001 C CNN
-	1    7900 2100
+P 7840 1630
+F 0 "U5" H 7760 1680 50  0000 C CNN
+F 1 "4050" H 7790 1610 50  0000 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 7840 1630 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7840 1630 50  0001 C CNN
+	1    7840 1630
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4050 U5
 U 4 1 5FC81415
-P 6850 1770
-F 0 "U5" V 6820 1850 50  0000 R CNN
-F 1 "4050" V 6750 1870 50  0000 R CNN
-F 2 "" H 6850 1770 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6850 1770 50  0001 C CNN
-	4    6850 1770
+P 7500 1250
+F 0 "U5" V 7470 1330 50  0000 R CNN
+F 1 "4050" V 7400 1350 50  0000 R CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 7500 1250 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7500 1250 50  0001 C CNN
+	4    7500 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -43,7 +43,7 @@ U 5 1 5FC8251A
 P 9600 3700
 F 0 "U5" H 9520 3740 50  0000 C CNN
 F 1 "4050" H 9550 3670 50  0000 C CNN
-F 2 "" H 9600 3700 50  0001 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 9600 3700 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 9600 3700 50  0001 C CNN
 	5    9600 3700
 	1    0    0    -1  
@@ -54,7 +54,7 @@ U 6 1 5FC83254
 P 9600 3200
 F 0 "U5" H 9520 3240 50  0000 C CNN
 F 1 "4050" H 9550 3170 50  0000 C CNN
-F 2 "" H 9600 3200 50  0001 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 9600 3200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 9600 3200 50  0001 C CNN
 	6    9600 3200
 	1    0    0    -1  
@@ -65,150 +65,60 @@ U 7 1 5FC846DA
 P 10400 3350
 F 0 "U5" H 10630 3396 50  0000 L CNN
 F 1 "4050" H 10630 3305 50  0000 L CNN
-F 2 "" H 10400 3350 50  0001 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 10400 3350 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 10400 3350 50  0001 C CNN
 	7    10400 3350
 	1    0    0    -1  
 $EndComp
-Text Notes 8330 1710 0    50   ~ 0
-Chip Select
-Text Notes 8350 1810 0    50   ~ 0
-Data Input
-Text Notes 8580 1910 0    50   ~ 0
-GND
-Text Notes 8290 2110 0    50   ~ 0
-Serial Clock
-Text Notes 8580 2210 0    50   ~ 0
-GND
-Text Notes 8430 2290 0    39   ~ 0
-Data Output
-Wire Wire Line
-	8800 1700 8310 1700
-Wire Wire Line
-	8800 2100 8200 2100
-Wire Wire Line
-	8200 1500 8310 1500
-Wire Wire Line
-	8310 1500 8310 1700
-NoConn ~ 8770 1600
-Wire Wire Line
-	8800 1600 8770 1600
-Wire Wire Line
-	8800 2400 8780 2400
-Text GLabel 8420 2300 0    50   Output ~ 0
+Text GLabel 9720 1630 2    50   Output ~ 0
 SD_RX
-Text GLabel 7550 1800 0    50   Input ~ 0
+Text GLabel 7010 1830 0    50   Input ~ 0
 SD_TX
 Wire Wire Line
-	7550 1800 7600 1800
-Wire Wire Line
-	7600 2100 6850 2100
-Wire Wire Line
-	6850 2100 6850 2070
+	7010 1830 7060 1830
 $Comp
 L Device:LED D1
 U 1 1 5FC9D336
-P 7050 1180
-F 0 "D1" H 7043 925 50  0000 C CNN
-F 1 "SD_Select" H 7043 1016 50  0000 C CNN
-F 2 "" H 7050 1180 50  0001 C CNN
-F 3 "~" H 7050 1180 50  0001 C CNN
-	1    7050 1180
+P 7940 910
+F 0 "D1" H 7933 655 50  0000 C CNN
+F 1 "SD_Select" H 7933 746 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7940 910 50  0001 C CNN
+F 3 "~" H 7940 910 50  0001 C CNN
+	1    7940 910 
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5FC9F84E
-P 6850 1330
-F 0 "R4" H 6720 1330 50  0000 L CNN
-F 1 "330" V 6850 1260 47  0000 L CNN
-F 2 "" H 6850 1330 50  0001 C CNN
-F 3 "~" H 6850 1330 50  0001 C CNN
-	1    6850 1330
-	1    0    0    -1  
+P 7640 910
+F 0 "R4" H 7510 910 50  0000 L CNN
+F 1 "330" V 7640 840 47  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7640 910 50  0001 C CNN
+F 3 "~" H 7640 910 50  0001 C CNN
+	1    7640 910 
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6850 1470 6850 1430
+	7500 950  7500 910 
 Wire Wire Line
-	6850 1230 6850 1180
-Wire Wire Line
-	6850 1180 6900 1180
-Wire Wire Line
-	7200 1180 8310 1180
-Wire Wire Line
-	8310 1180 8310 1500
-Connection ~ 8310 1500
-Text GLabel 7560 1500 0    50   Input ~ 0
+	7740 910  7790 910 
+Text GLabel 10700 1930 2    50   Input ~ 0
 SD_Select
 Wire Wire Line
-	7560 1500 7600 1500
+	10700 1930 10660 1930
 Wire Wire Line
-	8800 1800 8200 1800
-$Comp
-L 4xxx:4050 U5
-U 2 1 5FC7FB0B
-P 7900 1800
-F 0 "U5" H 7830 1850 50  0000 C CNN
-F 1 "4050" H 7850 1780 50  0000 C CNN
-F 2 "" H 7900 1800 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7900 1800 50  0001 C CNN
-	2    7900 1800
-	1    0    0    -1  
-$EndComp
+	8260 1830 7660 1830
 $Comp
 L power:GND #PWR0116
 U 1 1 5FCA70CD
-P 8110 2420
-F 0 "#PWR0116" H 8110 2170 50  0001 C CNN
-F 1 "GND" H 8115 2247 50  0000 C CNN
-F 2 "" H 8110 2420 50  0001 C CNN
-F 3 "" H 8110 2420 50  0001 C CNN
-	1    8110 2420
+P 9760 2280
+F 0 "#PWR0116" H 9760 2030 50  0001 C CNN
+F 1 "GND" H 9765 2107 50  0000 C CNN
+F 2 "" H 9760 2280 50  0001 C CNN
+F 3 "" H 9760 2280 50  0001 C CNN
+	1    9760 2280
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8110 2420 8110 2200
-Wire Wire Line
-	8110 2200 8800 2200
-Wire Wire Line
-	8110 2200 8110 1900
-Wire Wire Line
-	8110 1900 8800 1900
-Connection ~ 8110 2200
-Wire Wire Line
-	8420 2300 8800 2300
-Text Notes 8570 2010 0    50   ~ 0
-3.3V
-Wire Wire Line
-	8800 2000 8170 2000
-Wire Wire Line
-	8170 2000 8170 1700
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 5FCAB54F
-P 8170 1700
-F 0 "#PWR0117" H 8170 1550 50  0001 C CNN
-F 1 "+3.3V" H 8160 1840 50  0000 C CNN
-F 2 "" H 8170 1700 50  0001 C CNN
-F 3 "" H 8170 1700 50  0001 C CNN
-	1    8170 1700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8780 2400
-$Comp
-L Connector:SD_Card J1
-U 1 1 5FA89395
-P 9700 2000
-F 0 "J1" V 9654 2528 50  0000 L CNN
-F 1 "SD_Card1" V 9745 2528 50  0000 L CNN
-F 2 "" H 9700 2000 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 9700 2000 50  0001 C CNN
-	1    9700 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 1900 10620 1900
-NoConn ~ 10620 1900
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5FCAF04E
@@ -271,29 +181,25 @@ NoConn ~ 9920 3200
 Wire Wire Line
 	9900 3700 9920 3700
 NoConn ~ 9920 3700
-Text GLabel 10700 1800 2    50   Output ~ 0
-SD_CD
 Wire Wire Line
-	10600 1800 10700 1800
+	8260 2030 8110 2030
 Wire Wire Line
-	10600 2100 10750 2100
+	8110 2030 8110 2130
 Wire Wire Line
-	10750 2100 10750 2200
+	8110 2130 8260 2130
 Wire Wire Line
-	10750 2200 10600 2200
-Wire Wire Line
-	10750 2200 10750 2250
-Connection ~ 10750 2200
+	8110 2130 8110 2180
+Connection ~ 8110 2130
 $Comp
 L power:GND #PWR0122
 U 1 1 5FCCF222
-P 10750 2250
-F 0 "#PWR0122" H 10750 2000 50  0001 C CNN
-F 1 "GND" H 10755 2077 50  0000 C CNN
-F 2 "" H 10750 2250 50  0001 C CNN
-F 3 "" H 10750 2250 50  0001 C CNN
-	1    10750 2250
-	1    0    0    -1  
+P 8110 2180
+F 0 "#PWR0122" H 8110 1930 50  0001 C CNN
+F 1 "GND" H 8115 2007 50  0000 C CNN
+F 2 "" H 8110 2180 50  0001 C CNN
+F 3 "" H 8110 2180 50  0001 C CNN
+	1    8110 2180
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Timer_RTC:DS1307Z+ U?
@@ -324,7 +230,7 @@ AR Path="/5FCCCCDF/5FCDBDB0" Ref="R?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDB0" Ref="R2"  Part="1" 
 F 0 "R2" H 1100 1250 50  0000 L CNN
 F 1 "1K" V 1250 1200 39  0000 L CNN
-F 2 "" H 1250 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1250 1250 50  0001 C CNN
 F 3 "~" H 1250 1250 50  0001 C CNN
 	1    1250 1250
 	1    0    0    -1  
@@ -337,7 +243,7 @@ AR Path="/5FCCCCDF/5FCDBDB6" Ref="R?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDB6" Ref="R3"  Part="1" 
 F 0 "R3" H 1540 1250 50  0000 L CNN
 F 1 "1K" V 1500 1200 39  0000 L CNN
-F 2 "" H 1500 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 1250 50  0001 C CNN
 F 3 "~" H 1500 1250 50  0001 C CNN
 	1    1500 1250
 	1    0    0    -1  
@@ -387,7 +293,7 @@ AR Path="/5FCCCCDF/5FCDBDD0" Ref="Y?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDD0" Ref="Y1"  Part="1" 
 F 0 "Y1" V 1150 1700 50  0000 R CNN
 F 1 "32.768KHz" V 1150 2200 39  0000 R CNN
-F 2 "" H 1150 1800 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 1150 1800 50  0001 C CNN
 F 3 "~" H 1150 1800 50  0001 C CNN
 	1    1150 1800
 	0    -1   -1   0   
@@ -419,7 +325,7 @@ AR Path="/5FCCCCDF/5FCDBDE0" Ref="Conn?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDE0" Ref="Conn5"  Part="1" 
 F 0 "Conn5" H 3162 2075 60  0000 L CNN
 F 1 "12mm_Coin_Cell_Battery_Holder" H 3050 1800 60  0001 C CNN
-F 2 "" H 2950 1850 60  0001 C CNN
+F 2 "MRDT_Connectors:CR1220_Battery_Holder" H 2950 1850 60  0001 C CNN
 F 3 "" H 2950 1850 60  0001 C CNN
 	1    2950 1850
 	1    0    0    -1  
@@ -439,12 +345,83 @@ Wire Wire Line
 $Comp
 L 4xxx:4050 U5
 U 3 1 5FC80647
-P 7900 1500
-F 0 "U5" H 7830 1540 50  0000 C CNN
-F 1 "4050" H 7850 1470 50  0000 C CNN
-F 2 "" H 7900 1500 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7900 1500 50  0001 C CNN
-	3    7900 1500
+P 10360 1930
+F 0 "U5" H 10290 1970 50  0000 C CNN
+F 1 "4050" H 10310 1900 50  0000 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 10360 1930 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 10360 1930 50  0001 C CNN
+	3    10360 1930
+	-1   0    0    1   
+$EndComp
+$Comp
+L MultimediaAndBlackBoxBoard:104031-0811 J1
+U 1 1 5FC5FA84
+P 8960 1830
+F 0 "J1" H 8960 2495 50  0000 C CNN
+F 1 "104031-0811" H 8960 2404 50  0000 C CNN
+F 2 "Multimedia:MOLEX_104031-0811" H 8960 1830 50  0001 L BNN
+F 3 "" H 8960 1830 50  0001 L BNN
+F 4 "1.57mm" H 8960 1830 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "B2" H 8960 1830 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendations" H 8960 1830 50  0001 L BNN "STANDARD"
+F 7 "Molex" H 8960 1830 50  0001 L BNN "MANUFACTURER"
+	1    8960 1830
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9660 2130 9760 2130
+Wire Wire Line
+	9760 2130 9760 2230
+Wire Wire Line
+	9660 2230 9760 2230
+Connection ~ 9760 2230
+Wire Wire Line
+	9760 2230 9760 2280
+Wire Wire Line
+	8260 1630 8140 1630
+Wire Wire Line
+	7500 1550 7500 1630
+Wire Wire Line
+	7500 910  7540 910 
+Wire Wire Line
+	7500 1630 7540 1630
+Wire Wire Line
+	10050 910  10050 1930
+Wire Wire Line
+	10050 1930 10060 1930
+Wire Wire Line
+	8090 910  10050 910 
+Wire Wire Line
+	9660 1930 10050 1930
+Connection ~ 10050 1930
+Wire Wire Line
+	9720 1630 9660 1630
+$Comp
+L 4xxx:4050 U5
+U 2 1 5FC7FB0B
+P 7360 1830
+F 0 "U5" H 7290 1880 50  0000 C CNN
+F 1 "4050" H 7310 1810 50  0000 C CNN
+F 2 "Multimedia:SOP127P780X200-16N" H 7360 1830 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 7360 1830 50  0001 C CNN
+	2    7360 1830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9660 1430 9730 1430
+Wire Wire Line
+	9730 1430 9730 1390
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5FCABE06
+P 9730 1390
+F 0 "#PWR0111" H 9730 1240 50  0001 C CNN
+F 1 "+3V3" H 9745 1563 50  0000 C CNN
+F 2 "" H 9730 1390 50  0001 C CNN
+F 3 "" H 9730 1390 50  0001 C CNN
+	1    9730 1390
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9660 1730
+NoConn ~ 9660 1830
 $EndSCHEMATC
