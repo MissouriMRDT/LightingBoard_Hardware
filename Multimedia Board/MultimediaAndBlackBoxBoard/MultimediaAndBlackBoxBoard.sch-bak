@@ -23,7 +23,7 @@ $Sheet
 S 3800 4900 2700 2200
 U 5FAAEFDF
 F0 "BlackBoxBoard" 50
-F1 "BlackBoxBoard.sch" 50
+F1 "sheets/BlackBoxBoard.sch" 50
 $EndSheet
 $Comp
 L MRDT_Connectors:AndersonPP Conn?

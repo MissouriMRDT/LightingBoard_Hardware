@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MultimediaAndBlackBoxBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,167 +15,142 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MRDT_Shields:Raspberry_Pi U?
+L MRDT_Shields:Raspberry_Pi U6
 U 1 1 5FADC0AA
-P 2450 3350
-F 0 "U?" H 2750 5547 60  0000 C CNN
-F 1 "Raspberry_Pi" H 2750 5441 60  0000 C CNN
-F 2 "" H 2450 4500 60  0001 C CNN
-F 3 "" H 2450 4500 60  0001 C CNN
-	1    2450 3350
+P 1500 2900
+F 0 "U6" H 1800 5097 60  0000 C CNN
+F 1 "Raspberry_Pi" H 1800 4991 60  0000 C CNN
+F 2 "" H 1500 4050 60  0001 C CNN
+F 3 "" H 1500 4050 60  0001 C CNN
+	1    1500 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 2500 2    39   Output ~ 0
-SD2_ChipSelect
-Wire Wire Line
-	3250 2500 3600 2500
-Text GLabel 1950 2500 0    39   Output ~ 0
-SD2_SerialClock
-Wire Wire Line
-	2250 2500 1950 2500
-Text GLabel 1950 2400 0    39   Output ~ 0
-SD2_SerialData_InTX
-Wire Wire Line
-	2250 2400 1950 2400
 $Comp
-L power:GND #PWR?
-U 1 1 5FADC0B6
-P 3900 1700
-F 0 "#PWR?" H 3900 1450 50  0001 C CNN
-F 1 "GND" H 3905 1527 50  0000 C CNN
-F 2 "" H 3900 1700 50  0001 C CNN
-F 3 "" H 3900 1700 50  0001 C CNN
-	1    3900 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 1600 3900 1600
-Wire Wire Line
-	3900 1600 3900 1700
-$Comp
-L power:+5V #PWR?
+L power:+5V #PWR0124
 U 1 1 5FADC0BE
-P 3250 1250
-F 0 "#PWR?" H 3250 1100 50  0001 C CNN
-F 1 "+5V" H 3265 1423 50  0000 C CNN
-F 2 "" H 3250 1250 50  0001 C CNN
-F 3 "" H 3250 1250 50  0001 C CNN
-	1    3250 1250
+P 2300 800
+F 0 "#PWR0124" H 2300 650 50  0001 C CNN
+F 1 "+5V" H 2315 973 50  0000 C CNN
+F 2 "" H 2300 800 50  0001 C CNN
+F 3 "" H 2300 800 50  0001 C CNN
+	1    2300 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 1400 3250 1250
+	2300 950  2300 800 
 $Comp
-L power:GND #PWR?
-U 1 1 5FADC0C5
-P 4200 2100
-F 0 "#PWR?" H 4200 1850 50  0001 C CNN
-F 1 "GND" H 4205 1927 50  0000 C CNN
-F 2 "" H 4200 2100 50  0001 C CNN
-F 3 "" H 4200 2100 50  0001 C CNN
-	1    4200 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2000 4200 2100
-Wire Wire Line
-	3250 2000 4200 2000
-Text GLabel 1950 2300 0    39   Input ~ 0
-Sd2_SerialData_OutRX
-Wire Wire Line
-	2250 2300 1950 2300
-Text GLabel 3600 2600 2    39   Output ~ 0
-SD1_ChipSelect
-Wire Wire Line
-	3250 2600 3600 2600
-$Comp
-L power:GND #PWR?
-U 1 1 5FADC0D1
-P 3500 3050
-F 0 "#PWR?" H 3500 2800 50  0001 C CNN
-F 1 "GND" H 3505 2877 50  0000 C CNN
-F 2 "" H 3500 3050 50  0001 C CNN
-F 3 "" H 3500 3050 50  0001 C CNN
-	1    3500 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FADC0D7
-P 3650 2900
-F 0 "#PWR?" H 3650 2650 50  0001 C CNN
-F 1 "GND" H 3655 2727 50  0000 C CNN
-F 2 "" H 3650 2900 50  0001 C CNN
-F 3 "" H 3650 2900 50  0001 C CNN
-	1    3650 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 2300 4450 2350
-Wire Wire Line
-	3250 2300 4450 2300
-$Comp
-L power:GND #PWR?
-U 1 1 5FADC0DF
-P 4450 2350
-F 0 "#PWR?" H 4450 2100 50  0001 C CNN
-F 1 "GND" H 4455 2177 50  0000 C CNN
-F 2 "" H 4450 2350 50  0001 C CNN
-F 3 "" H 4450 2350 50  0001 C CNN
-	1    4450 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 1800 1950 1800
-Wire Wire Line
-	1950 1800 1950 1850
-$Comp
-L power:GND #PWR?
-U 1 1 5FADC0E7
-P 1950 1850
-F 0 "#PWR?" H 1950 1600 50  0001 C CNN
-F 1 "GND" H 1955 1677 50  0000 C CNN
-F 2 "" H 1950 1850 50  0001 C CNN
-F 3 "" H 1950 1850 50  0001 C CNN
-	1    1950 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 2600 1700 2600
-Wire Wire Line
-	1700 2600 1700 2700
-$Comp
-L power:GND #PWR?
-U 1 1 5FADC0EF
-P 1700 2700
-F 0 "#PWR?" H 1700 2450 50  0001 C CNN
-F 1 "GND" H 1705 2527 50  0000 C CNN
-F 2 "" H 1700 2700 50  0001 C CNN
-F 3 "" H 1700 2700 50  0001 C CNN
-	1    1700 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0125
 U 1 1 5FADC0F5
-P 2150 3350
-F 0 "#PWR?" H 2150 3100 50  0001 C CNN
-F 1 "GND" H 2155 3177 50  0000 C CNN
-F 2 "" H 2150 3350 50  0001 C CNN
-F 3 "" H 2150 3350 50  0001 C CNN
-	1    2150 3350
+P 700 2900
+F 0 "#PWR0125" H 700 2650 50  0001 C CNN
+F 1 "GND" H 705 2727 50  0000 C CNN
+F 2 "" H 700 2900 50  0001 C CNN
+F 3 "" H 700 2900 50  0001 C CNN
+	1    700  2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3300 2150 3300
+	700  2850 700  2900
+Text GLabel 2410 1950 2    50   Output ~ 0
+Headlight_OnOff
+Text GLabel 2400 2150 2    50   Output ~ 0
+Dout_NeoPixel
+Text GLabel 1200 1950 0    50   Output ~ 0
+SD_TX
+Text GLabel 1200 1650 0    50   Output ~ 0
+SD_Select
+Text GLabel 1200 1850 0    50   Input ~ 0
+SD_RX
+Text GLabel 1200 1550 0    50   Input ~ 0
+SD_CD
 Wire Wire Line
-	2150 3300 2150 3350
+	2410 1950 2300 1950
 Wire Wire Line
-	3250 3000 3500 3000
+	2300 2150 2400 2150
 Wire Wire Line
-	3500 3000 3500 3050
+	1300 1550 1200 1550
 Wire Wire Line
-	3250 2800 3650 2800
+	1300 1650 1200 1650
 Wire Wire Line
-	3650 2800 3650 2900
+	1300 1850 1200 1850
+Wire Wire Line
+	1300 1950 1200 1950
+$Comp
+L power:GND #PWR0126
+U 1 1 5FCC4449
+P 3150 2600
+F 0 "#PWR0126" H 3150 2350 50  0001 C CNN
+F 1 "GND" H 3155 2427 50  0000 C CNN
+F 2 "" H 3150 2600 50  0001 C CNN
+F 3 "" H 3150 2600 50  0001 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2850 1300 2850
+Wire Wire Line
+	700  2150 700  2850
+Wire Wire Line
+	700  2150 1300 2150
+Connection ~ 700  2850
+Wire Wire Line
+	700  1350 700  2150
+Wire Wire Line
+	700  1350 1300 1350
+Connection ~ 700  2150
+Wire Wire Line
+	2300 1150 3150 1150
+Wire Wire Line
+	3150 1150 3150 1550
+Wire Wire Line
+	2300 2550 3150 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	3150 2550 3150 2600
+Wire Wire Line
+	2300 2350 3150 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2350 3150 2550
+Wire Wire Line
+	2300 1850 3150 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	3150 1850 3150 2350
+Wire Wire Line
+	2300 1550 3150 1550
+Connection ~ 3150 1550
+Wire Wire Line
+	3150 1550 3150 1850
+Text GLabel 1100 1150 0    39   Input ~ 0
+SCL
+Text GLabel 1100 1050 0    39   Input ~ 0
+SDA
+Wire Wire Line
+	1100 1150 1300 1150
+Wire Wire Line
+	1300 1050 1100 1050
+NoConn ~ 2300 1050
+NoConn ~ 2300 1250
+NoConn ~ 2300 1350
+NoConn ~ 2300 1450
+NoConn ~ 2300 1650
+NoConn ~ 2300 1750
+NoConn ~ 2300 2050
+NoConn ~ 2300 2250
+NoConn ~ 2300 2450
+NoConn ~ 2300 2650
+NoConn ~ 2300 2750
+NoConn ~ 2300 2850
+NoConn ~ 1300 2750
+NoConn ~ 1300 2650
+NoConn ~ 1300 2550
+NoConn ~ 1300 2450
+NoConn ~ 1300 2350
+NoConn ~ 1300 2250
+NoConn ~ 1300 2050
+NoConn ~ 1300 1750
+NoConn ~ 1300 1450
+NoConn ~ 1300 1250
+NoConn ~ 1300 950 
 $EndSCHEMATC
