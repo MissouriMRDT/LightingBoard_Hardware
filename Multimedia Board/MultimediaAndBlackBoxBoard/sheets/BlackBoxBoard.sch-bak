@@ -69,12 +69,6 @@ F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" 
 	7    10400 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9720 1630 2    50   Output ~ 0
-SD_RX
-Text GLabel 7010 1830 0    50   Input ~ 0
-SD_TX
-Wire Wire Line
-	7010 1830 7060 1830
 $Comp
 L Device:LED D1
 U 1 1 5FC9D336
@@ -426,10 +420,10 @@ $EndComp
 NoConn ~ 9660 1730
 NoConn ~ 9660 1830
 $Comp
-L power:+5VA #PWR?
+L power:+5VA #PWR0112
 U 1 1 5FC499D5
 P 2950 1100
-F 0 "#PWR?" H 2950 950 50  0001 C CNN
+F 0 "#PWR0112" H 2950 950 50  0001 C CNN
 F 1 "+5VA" H 2965 1273 50  0000 C CNN
 F 2 "" H 2950 1100 50  0001 C CNN
 F 3 "" H 2950 1100 50  0001 C CNN
@@ -438,10 +432,10 @@ F 3 "" H 2950 1100 50  0001 C CNN
 $EndComp
 Connection ~ 2950 1100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0117
 U 1 1 5FC4A290
 P 2950 2200
-F 0 "#PWR?" H 2950 1950 50  0001 C CNN
+F 0 "#PWR0117" H 2950 1950 50  0001 C CNN
 F 1 "GND" H 2955 2027 50  0000 C CNN
 F 2 "" H 2950 2200 50  0001 C CNN
 F 3 "" H 2950 2200 50  0001 C CNN
@@ -449,4 +443,15 @@ F 3 "" H 2950 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2950 2200
+Text GLabel 7460 1630 0    50   Input ~ 0
+SD_SCLK
+Wire Wire Line
+	7460 1630 7500 1630
+Connection ~ 7500 1630
+Text GLabel 9720 1630 2    50   Output ~ 0
+SD_MISO
+Text GLabel 7010 1830 0    50   Input ~ 0
+SD_MOSI
+Wire Wire Line
+	7010 1830 7060 1830
 $EndSCHEMATC

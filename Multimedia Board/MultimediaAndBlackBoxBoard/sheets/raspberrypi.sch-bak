@@ -52,12 +52,10 @@ Wire Wire Line
 	700  2850 700  2900
 Text GLabel 2400 2150 2    50   Output ~ 0
 Dout_NeoPixel
-Text GLabel 1200 1950 0    50   Output ~ 0
-SD_TX
 Text GLabel 1200 1650 0    50   Output ~ 0
 SD_Select
 Text GLabel 1200 1850 0    50   Input ~ 0
-SD_RX
+SD_MISO
 Wire Wire Line
 	2410 1950 2300 1950
 Wire Wire Line
@@ -141,7 +139,6 @@ NoConn ~ 1300 2550
 NoConn ~ 1300 2450
 NoConn ~ 1300 2350
 NoConn ~ 1300 2250
-NoConn ~ 1300 2050
 NoConn ~ 1300 1750
 NoConn ~ 1300 1450
 NoConn ~ 1300 1250
@@ -149,4 +146,10 @@ NoConn ~ 1300 950
 Text GLabel 2410 1950 2    50   Output ~ 0
 LightToggle
 NoConn ~ 1300 1550
+Text GLabel 1200 1950 0    50   Output ~ 0
+SD_MOSI
+Text GLabel 1200 2050 0    50   Output ~ 0
+SD_SCLK
+Wire Wire Line
+	1300 2050 1200 2050
 $EndSCHEMATC

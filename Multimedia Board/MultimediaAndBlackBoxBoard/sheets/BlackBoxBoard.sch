@@ -69,12 +69,6 @@ F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" 
 	7    10400 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9720 1630 2    50   Output ~ 0
-SD_RX
-Text GLabel 7010 1830 0    50   Input ~ 0
-SD_TX
-Wire Wire Line
-	7010 1830 7060 1830
 $Comp
 L Device:LED D1
 U 1 1 5FC9D336
@@ -92,7 +86,7 @@ U 1 1 5FC9F84E
 P 7640 910
 F 0 "R4" H 7510 910 50  0000 L CNN
 F 1 "330" V 7640 840 47  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7640 910 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7640 910 50  0001 C CNN
 F 3 "~" H 7640 910 50  0001 C CNN
 	1    7640 910 
 	0    1    1    0   
@@ -229,7 +223,7 @@ AR Path="/5FCCCCDF/5FCDBDB0" Ref="R?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDB0" Ref="R2"  Part="1" 
 F 0 "R2" H 1100 1250 50  0000 L CNN
 F 1 "1K" V 1250 1200 39  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1250 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 1250 50  0001 C CNN
 F 3 "~" H 1250 1250 50  0001 C CNN
 	1    1250 1250
 	1    0    0    -1  
@@ -242,7 +236,7 @@ AR Path="/5FCCCCDF/5FCDBDB6" Ref="R?"  Part="1"
 AR Path="/5FAAEFDF/5FCDBDB6" Ref="R3"  Part="1" 
 F 0 "R3" H 1540 1250 50  0000 L CNN
 F 1 "1K" V 1500 1200 39  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1500 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1500 1250 50  0001 C CNN
 F 3 "~" H 1500 1250 50  0001 C CNN
 	1    1500 1250
 	1    0    0    -1  
@@ -449,4 +443,15 @@ F 3 "" H 2950 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2950 2200
+Text GLabel 7460 1630 0    50   Input ~ 0
+SD_SCLK
+Wire Wire Line
+	7460 1630 7500 1630
+Connection ~ 7500 1630
+Text GLabel 9720 1630 2    50   Output ~ 0
+SD_MISO
+Text GLabel 7010 1830 0    50   Input ~ 0
+SD_MOSI
+Wire Wire Line
+	7010 1830 7060 1830
 $EndSCHEMATC
