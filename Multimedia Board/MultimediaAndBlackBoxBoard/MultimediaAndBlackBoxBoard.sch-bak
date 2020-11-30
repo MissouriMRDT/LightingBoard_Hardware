@@ -304,10 +304,6 @@ F 3 "" H 8290 810 50  0001 C CNN
 	1    8290 810 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10160 1920 0    39   Input ~ 0
-SD_TX
-Text GLabel 10170 1680 0    39   Input ~ 0
-SD_Select
 Text GLabel 10170 1220 0    39   Input ~ 0
 SD_RX
 Text GLabel 10190 750  0    39   Input ~ 0
@@ -347,40 +343,12 @@ F 3 "~" H 10320 1220 50  0001 C CNN
 	1    10320 1220
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R10
-U 1 1 5FCF4A7B
-P 10320 1680
-F 0 "R10" V 10250 1650 50  0000 C CNN
-F 1 "480" V 10320 1680 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10320 1680 50  0001 C CNN
-F 3 "~" H 10320 1680 50  0001 C CNN
-	1    10320 1680
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 5FCF4A81
-P 10310 1920
-F 0 "R7" V 10240 1890 50  0000 C CNN
-F 1 "480" V 10310 1920 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10310 1920 50  0001 C CNN
-F 3 "~" H 10310 1920 50  0001 C CNN
-	1    10310 1920
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10190 750  10240 750 
 Wire Wire Line
 	10180 980  10230 980 
 Wire Wire Line
 	10170 1220 10220 1220
-Wire Wire Line
-	10170 1450 10220 1450
-Wire Wire Line
-	10170 1680 10220 1680
-Wire Wire Line
-	10160 1920 10210 1920
 $Comp
 L Device:LED_Small D4
 U 1 1 5FD01A78
@@ -404,19 +372,6 @@ F 3 "~" V 10610 980 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R9
-U 1 1 5FCF4106
-P 10320 1450
-F 0 "R9" V 10250 1420 50  0000 C CNN
-F 1 "480" V 10320 1450 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10320 1450 50  0001 C CNN
-F 3 "~" H 10320 1450 50  0001 C CNN
-	1    10320 1450
-	0    1    1    0   
-$EndComp
-Text GLabel 10170 1450 0    39   Input ~ 0
-SD_CD
-$Comp
 L Device:LED_Small D6
 U 1 1 5FD1C59A
 P 10610 1220
@@ -427,51 +382,12 @@ F 3 "~" V 10610 1220 50  0001 C CNN
 	1    10610 1220
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:LED_Small D7
-U 1 1 5FD1C5A0
-P 10610 1450
-F 0 "D7" H 10680 1370 50  0000 C CNN
-F 1 "BLUE" H 10540 1370 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10610 1450 50  0001 C CNN
-F 3 "~" V 10610 1450 50  0001 C CNN
-	1    10610 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D9
-U 1 1 5FD1E834
-P 10610 1920
-F 0 "D9" H 10680 1840 50  0000 C CNN
-F 1 "BLUE" H 10540 1840 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10610 1920 50  0001 C CNN
-F 3 "~" V 10610 1920 50  0001 C CNN
-	1    10610 1920
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small D8
-U 1 1 5FD1E83A
-P 10610 1680
-F 0 "D8" H 10680 1600 50  0000 C CNN
-F 1 "BLUE" H 10540 1600 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10610 1680 50  0001 C CNN
-F 3 "~" V 10610 1680 50  0001 C CNN
-	1    10610 1680
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10440 750  10510 750 
 Wire Wire Line
 	10430 980  10510 980 
 Wire Wire Line
 	10420 1220 10510 1220
-Wire Wire Line
-	10420 1450 10510 1450
-Wire Wire Line
-	10420 1680 10510 1680
-Wire Wire Line
-	10410 1920 10510 1920
 Wire Wire Line
 	10710 750  10870 750 
 Wire Wire Line
@@ -483,24 +399,7 @@ Wire Wire Line
 Wire Wire Line
 	10870 1220 10870 980 
 Connection ~ 10870 980 
-Wire Wire Line
-	10710 1450 10870 1450
-Wire Wire Line
-	10870 1450 10870 1220
 Connection ~ 10870 1220
-Wire Wire Line
-	10870 1680 10870 1450
-Connection ~ 10870 1450
-Wire Wire Line
-	10710 1680 10870 1680
-Wire Wire Line
-	10710 1920 10870 1920
-Wire Wire Line
-	10870 1920 10870 1680
-Connection ~ 10870 1680
-Wire Wire Line
-	10870 1920 10870 1950
-Connection ~ 10870 1920
 $Comp
 L power:GND #PWR03
 U 1 1 5FD2B619
@@ -594,4 +493,72 @@ Wire Wire Line
 	8290 1870 8440 1870
 Wire Wire Line
 	8290 860  8440 860 
+Wire Wire Line
+	10870 1220 10870 1460
+Wire Wire Line
+	10710 1460 10870 1460
+Wire Wire Line
+	10410 1700 10510 1700
+Wire Wire Line
+	10420 1460 10510 1460
+$Comp
+L Device:LED_Small D8
+U 1 1 5FD1E83A
+P 10610 1460
+F 0 "D8" H 10680 1380 50  0000 C CNN
+F 1 "BLUE" H 10540 1380 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10610 1460 50  0001 C CNN
+F 3 "~" V 10610 1460 50  0001 C CNN
+	1    10610 1460
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D9
+U 1 1 5FD1E834
+P 10610 1700
+F 0 "D9" H 10680 1620 50  0000 C CNN
+F 1 "BLUE" H 10540 1620 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10610 1700 50  0001 C CNN
+F 3 "~" V 10610 1700 50  0001 C CNN
+	1    10610 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10160 1700 10210 1700
+Wire Wire Line
+	10170 1460 10220 1460
+$Comp
+L Device:R_Small R7
+U 1 1 5FCF4A81
+P 10310 1700
+F 0 "R7" V 10240 1670 50  0000 C CNN
+F 1 "480" V 10310 1700 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10310 1700 50  0001 C CNN
+F 3 "~" H 10310 1700 50  0001 C CNN
+	1    10310 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 5FCF4A7B
+P 10320 1460
+F 0 "R10" V 10250 1430 50  0000 C CNN
+F 1 "480" V 10320 1460 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10320 1460 50  0001 C CNN
+F 3 "~" H 10320 1460 50  0001 C CNN
+	1    10320 1460
+	0    1    1    0   
+$EndComp
+Text GLabel 10170 1460 0    39   Input ~ 0
+SD_Select
+Text GLabel 10160 1700 0    39   Input ~ 0
+SD_TX
+Connection ~ 10870 1460
+Wire Wire Line
+	10870 1460 10870 1700
+Wire Wire Line
+	10710 1700 10870 1700
+Connection ~ 10870 1700
+Wire Wire Line
+	10870 1700 10870 1950
 $EndSCHEMATC

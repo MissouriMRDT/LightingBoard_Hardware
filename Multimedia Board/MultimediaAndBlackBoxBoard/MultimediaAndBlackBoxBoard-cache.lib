@@ -86,9 +86,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 10 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -109,9 +109,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 10 -30 -40 -30 40 N
 P 2 0 1 0 40 0 -30 0 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
 P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
 P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
 X K 1 -100 0 70 R 50 50 1 1 P
@@ -269,11 +269,11 @@ X GND 9 -200 1550 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# MultimediaAndBlackBoxBoard_104031-0811
+# MultimediaAndBlackBoxBoard-rescue_104031-0811-MultimediaAndBlackBoxBoard
 #
-DEF MultimediaAndBlackBoxBoard_104031-0811 J 0 40 Y Y 1 L N
+DEF MultimediaAndBlackBoxBoard-rescue_104031-0811-MultimediaAndBlackBoxBoard J 0 40 Y Y 1 L N
 F0 "J" -500 530 50 H V L BNN
-F1 "MultimediaAndBlackBoxBoard_104031-0811" -500 -600 50 H V L BNN
+F1 "MultimediaAndBlackBoxBoard-rescue_104031-0811-MultimediaAndBlackBoxBoard" -500 -600 50 H V L BNN
 F2 "MOLEX_104031-0811" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "1.57mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
@@ -299,11 +299,11 @@ X GND G4 700 -400 200 L 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
-# MultimediaAndBlackBoxBoard_BDJ2GA5WEFJ
+# MultimediaAndBlackBoxBoard-rescue_BDJ2GA5WEFJ-MultimediaAndBlackBoxBoard
 #
-DEF MultimediaAndBlackBoxBoard_BDJ2GA5WEFJ U 0 40 Y Y 1 F N
+DEF MultimediaAndBlackBoxBoard-rescue_BDJ2GA5WEFJ-MultimediaAndBlackBoxBoard U 0 40 Y Y 1 F N
 F0 "U" 0 300 50 H V C CNN
-F1 "MultimediaAndBlackBoxBoard_BDJ2GA5WEFJ" 0 200 50 H V C CNN
+F1 "MultimediaAndBlackBoxBoard-rescue_BDJ2GA5WEFJ-MultimediaAndBlackBoxBoard" 0 200 50 H V C CNN
 F2 "" -150 50 50 H I C CNN
 F3 "" -150 50 50 H I C CNN
 DRAW
@@ -413,6 +413,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5VA
+#
+DEF power_+5VA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5VA" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5VA 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MultimediaAndBlackBoxBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -146,7 +145,7 @@ $EndComp
 Wire Wire Line
 	2250 1400 2350 1400
 $Comp
-L MultimediaAndBlackBoxBoard:BDJ2GA5WEFJ U3
+L MultimediaAndBlackBoxBoard-rescue:BDJ2GA5WEFJ-MultimediaAndBlackBoxBoard U3
 U 1 1 5FC36AC2
 P 1400 1300
 F 0 "U3" H 1400 1625 50  0000 C CNN
