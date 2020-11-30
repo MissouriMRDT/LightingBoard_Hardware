@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MultimediaAndBlackBoxBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -354,9 +353,11 @@ F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" 
 	-1   0    0    1   
 $EndComp
 $Comp
-L MultimediaAndBlackBoxBoard:104031-0811 J1
+L MultimediaAndBlackBoxBoard-rescue:104031-0811-MultimediaAndBlackBoxBoard J1
 U 1 1 5FC5FA84
 P 8960 1830
+AR Path="/5FC5FA84" Ref="J1"  Part="1" 
+AR Path="/5FAAEFDF/5FC5FA84" Ref="J1"  Part="1" 
 F 0 "J1" H 8960 2495 50  0000 C CNN
 F 1 "104031-0811" H 8960 2404 50  0000 C CNN
 F 2 "Multimedia:MOLEX_104031-0811" H 8960 1830 50  0001 L BNN
@@ -424,4 +425,28 @@ F 3 "" H 9730 1390 50  0001 C CNN
 $EndComp
 NoConn ~ 9660 1730
 NoConn ~ 9660 1830
+$Comp
+L power:+5VA #PWR?
+U 1 1 5FC499D5
+P 2950 1100
+F 0 "#PWR?" H 2950 950 50  0001 C CNN
+F 1 "+5VA" H 2965 1273 50  0000 C CNN
+F 2 "" H 2950 1100 50  0001 C CNN
+F 3 "" H 2950 1100 50  0001 C CNN
+	1    2950 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5FC4A290
+P 2950 2200
+F 0 "#PWR?" H 2950 1950 50  0001 C CNN
+F 1 "GND" H 2955 2027 50  0000 C CNN
+F 2 "" H 2950 2200 50  0001 C CNN
+F 3 "" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 2200
 $EndSCHEMATC

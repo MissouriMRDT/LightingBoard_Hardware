@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name Multimedia)(type KiCad)(uri C:/Users/volun/Documents/GitHub/Multimedia_Hardware/Documents/Libraries/footprints)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri C:/Users/alexm/Documents/GitHub/Multimedia_Hardware/Documents/Libraries/footprints)(options "")(descr ""))
+  (lib (name Sigs)(type KiCad)(uri C:/GitHub/Sigs)(options "")(descr ""))
 )
