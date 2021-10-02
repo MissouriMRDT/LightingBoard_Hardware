@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Multimedia IC")(type Legacy)(uri "${KIPRJMOD}/Multimedia IC.lib")(options "")(descr ""))
+)

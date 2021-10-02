@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6800 750  2    50   Input ~ 0
+Dout_NeoPixel
+$Comp
+L power:GND #PWR0110
+U 1 1 5F925AD2
+P 6500 1350
+F 0 "#PWR0110" H 6500 1100 50  0001 C CNN
+F 1 "GND" H 6505 1177 50  0000 C CNN
+F 2 "" H 6500 1350 50  0001 C CNN
+F 3 "" H 6500 1350 50  0001 C CNN
+	1    6500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1250 6500 1250
+Wire Wire Line
+	6500 1250 6500 1350
+Wire Wire Line
+	6800 1050 6500 1050
+Wire Wire Line
+	6500 1050 6300 1050
+Connection ~ 6500 1050
+Wire Wire Line
+	6500 1250 6300 1250
+Connection ~ 6500 1250
+$Comp
+L Device:C_Small C7
+U 1 1 5F92B704
+P 6300 1150
+F 0 "C7" H 6415 1196 50  0000 L CNN
+F 1 "10uF" H 6415 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6338 1000 50  0001 C CNN
+F 3 "~" H 6300 1150 50  0001 C CNN
+	1    6300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 750  6700 750 
+Wire Wire Line
+	6700 1150 6800 1150
+Text GLabel 1150 1905 3    50   Input ~ 0
+LightToggle
+$Comp
+L MRDT_Connectors:Molex_SL_02 Conn2
+U 1 1 5FA16F6F
+P 2850 1155
+F 0 "Conn2" H 2977 1313 60  0000 L CNN
+F 1 "Molex_SL_02" H 2977 1207 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 2850 1055 60  0001 C CNN
+F 3 "" H 2850 1055 60  0001 C CNN
+	1    2850 1155
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_02 Conn3
+U 1 1 5FA16FD3
+P 2800 1605
+F 0 "Conn3" H 2927 1763 60  0000 L CNN
+F 1 "Molex_SL_02" H 2927 1657 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_02_Horizontal" H 2800 1505 60  0001 C CNN
+F 3 "" H 2800 1505 60  0001 C CNN
+	1    2800 1605
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn4
+U 1 1 5FA19930
+P 7000 1300
+F 0 "Conn4" H 7127 1508 60  0000 L CNN
+F 1 "Molex_SL_03" H 7127 1402 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_03_Horizontal" H 7000 1300 60  0001 C CNN
+F 3 "" H 7000 1300 60  0001 C CNN
+	1    7000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 900  6500 1050
+Wire Wire Line
+	6700 750  6700 1150
+$Comp
+L power:+5V #PWR0113
+U 1 1 5FC3A137
+P 6500 900
+F 0 "#PWR0113" H 6500 750 50  0001 C CNN
+F 1 "+5V" H 6515 1073 50  0000 C CNN
+F 2 "" H 6500 900 50  0001 C CNN
+F 3 "" H 6500 900 50  0001 C CNN
+	1    6500 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1605 1150 1555
+$Comp
+L Device:R_Small R1
+U 1 1 5FC46FD1
+P 1150 1705
+F 0 "R1" H 1000 1705 50  0000 L CNN
+F 1 "480" V 1150 1655 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1150 1705 50  0001 C CNN
+F 3 "~" H 1150 1705 50  0001 C CNN
+	1    1150 1705
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5FC50E76
+P 2550 1155
+F 0 "#PWR0114" H 2550 905 50  0001 C CNN
+F 1 "GND" H 2555 982 50  0000 C CNN
+F 2 "" H 2550 1155 50  0001 C CNN
+F 3 "" H 2550 1155 50  0001 C CNN
+	1    2550 1155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1155 2550 1105
+Wire Wire Line
+	2550 1105 2650 1105
+$Comp
+L power:GND #PWR0115
+U 1 1 5FC54D27
+P 2500 1605
+F 0 "#PWR0115" H 2500 1355 50  0001 C CNN
+F 1 "GND" H 2505 1432 50  0000 C CNN
+F 2 "" H 2500 1605 50  0001 C CNN
+F 3 "" H 2500 1605 50  0001 C CNN
+	1    2500 1605
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1555 2600 1555
+Wire Wire Line
+	1200 1555 1150 1555
+Wire Wire Line
+	1200 1355 1050 1355
+Wire Wire Line
+	1050 1355 1050 1405
+$Comp
+L power:GND #PWR04
+U 1 1 5FC3AB0D
+P 1050 1405
+F 0 "#PWR04" H 1050 1155 50  0001 C CNN
+F 1 "GND" H 1055 1232 50  0000 C CNN
+F 2 "" H 1050 1405 50  0001 C CNN
+F 3 "" H 1050 1405 50  0001 C CNN
+	1    1050 1405
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1805 1150 1905
+$Comp
+L power:+12VA #PWR05
+U 1 1 5FC3C86A
+P 2150 1305
+F 0 "#PWR05" H 2150 1155 50  0001 C CNN
+F 1 "+12VA" H 2165 1478 50  0000 C CNN
+F 2 "" H 2150 1305 50  0001 C CNN
+F 3 "" H 2150 1305 50  0001 C CNN
+	1    2150 1305
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1455 2400 1455
+Wire Wire Line
+	2400 1455 2400 1005
+Connection ~ 2400 1455
+Wire Wire Line
+	2100 1355 2150 1355
+Wire Wire Line
+	2150 1355 2150 1305
+Wire Wire Line
+	2100 1555 2400 1555
+Wire Wire Line
+	2400 1555 2400 1455
+Wire Wire Line
+	2650 1005 2400 1005
+Wire Wire Line
+	2500 1605 2500 1555
+Wire Wire Line
+	2600 1455 2400 1455
+$Comp
+L MultimediaAndBlackBoxBoard-rescue:BDJ2GA5WEFJ-MultimediaAndBlackBoxBoard U3
+U 1 1 5FC36AC2
+P 1650 1455
+F 0 "U3" H 1650 1780 50  0000 C CNN
+F 1 "BDJ2GA5WEFJ" H 1650 1689 50  0000 C CNN
+F 2 "Package_SO:HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.2mm" H 1500 1505 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxga5wefj-e.pdf" H 1500 1505 50  0001 C CNN
+	1    1650 1455
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
