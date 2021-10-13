@@ -812,9 +812,9 @@ Connection ~ 6700 1800
 Wire Wire Line
 	6700 1800 6500 1800
 Text GLabel 7125 1900 2    50   Input ~ 0
-InteriorNeoPizel
+InteriorNeoPixel
 Text GLabel 9200 1475 0    50   Output ~ 0
-InteriorNeoPizel
+InteriorNeoPixel
 Wire Wire Line
 	6500 3200 6650 3200
 Wire Wire Line
@@ -897,8 +897,71 @@ NoConn ~ 10425 1275
 NoConn ~ 10425 1175
 NoConn ~ 10425 1075
 NoConn ~ 9200 1075
-NoConn ~ 9200 1575
 NoConn ~ 9200 1675
 NoConn ~ 9200 1775
 NoConn ~ 9200 1875
+$Comp
+L MRDT_Connectors:Molex_uF_S_03 Conn?
+U 1 1 6166808D
+P 6300 1325
+F 0 "Conn?" V 6550 1475 60  0000 C CNN
+F 1 "Auto Panel" V 6450 1475 60  0000 C CNN
+F 2 "MRDT_Connectors:MOLEX_uF_S_03_Horizontal" H 6300 1325 60  0001 C CNN
+F 3 "" H 6300 1325 60  0001 C CNN
+	1    6300 1325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61668093
+P 6750 1175
+F 0 "C?" H 6842 1221 50  0000 L CNN
+F 1 "10uF" H 6842 1130 50  0000 L CNN
+F 2 "" H 6750 1175 50  0001 C CNN
+F 3 "~" H 6750 1175 50  0001 C CNN
+	1    6750 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61668099
+P 6700 1325
+F 0 "#PWR?" H 6700 1075 50  0001 C CNN
+F 1 "GND" H 6705 1152 50  0000 C CNN
+F 2 "" H 6700 1325 50  0001 C CNN
+F 3 "" H 6700 1325 50  0001 C CNN
+	1    6700 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6166809F
+P 6700 1025
+F 0 "#PWR?" H 6700 875 50  0001 C CNN
+F 1 "+5V" H 6715 1198 50  0000 C CNN
+F 2 "" H 6700 1025 50  0001 C CNN
+F 3 "" H 6700 1025 50  0001 C CNN
+	1    6700 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1325 6700 1275
+Wire Wire Line
+	6500 1275 6700 1275
+Wire Wire Line
+	6750 1075 6700 1075
+Wire Wire Line
+	6700 1025 6700 1075
+Connection ~ 6700 1275
+Wire Wire Line
+	6700 1275 6750 1275
+Connection ~ 6700 1075
+Wire Wire Line
+	6700 1075 6500 1075
+Text GLabel 7125 1175 2    50   Input ~ 0
+SpeakerNeoPixel
+Wire Wire Line
+	6500 1175 7125 1175
+Text GLabel 9200 1575 0    50   Output ~ 0
+SpeakerNeoPixel
 $EndSCHEMATC
