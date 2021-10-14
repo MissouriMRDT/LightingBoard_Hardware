@@ -172,7 +172,7 @@ L Device:R_Small_US R1
 U 1 1 61621527
 P 4750 2875
 F 0 "R1" V 4925 2875 50  0000 C CNN
-F 1 "330" V 4850 2875 50  0000 C CNN
+F 1 "47" V 4850 2875 50  0000 C CNN
 F 2 "" H 4750 2875 50  0001 C CNN
 F 3 "~" H 4750 2875 50  0001 C CNN
 	1    4750 2875
@@ -295,7 +295,7 @@ L Device:R_Small_US R2
 U 1 1 6163AD25
 P 4750 3750
 F 0 "R2" V 4925 3750 50  0000 C CNN
-F 1 "480" V 4850 3750 50  0000 C CNN
+F 1 "100" V 4850 3750 50  0000 C CNN
 F 2 "" H 4750 3750 50  0001 C CNN
 F 3 "~" H 4750 3750 50  0001 C CNN
 	1    4750 3750
@@ -530,8 +530,6 @@ Wire Wire Line
 Wire Wire Line
 	9075 4275 9075 4375
 Wire Wire Line
-	9075 2175 9075 4275
-Wire Wire Line
 	9075 2175 9200 2175
 Connection ~ 9075 4275
 Wire Wire Line
@@ -623,11 +621,11 @@ Text GLabel 7125 3300 2    50   Input ~ 0
 UnderglowNeoPixel
 Text GLabel 7125 2625 2    50   Input ~ 0
 AutopanelNeoPixel
-Text GLabel 9200 1175 0    50   Output ~ 0
+Text GLabel 8950 2675 0    50   Output ~ 0
 AutupanelNeoPixel
-Text GLabel 9200 1275 0    50   Output ~ 0
+Text GLabel 8950 2775 0    50   Output ~ 0
 UnderglowNeoPixel
-Text GLabel 9200 1375 0    50   Output ~ 0
+Text GLabel 8950 2575 0    50   Output ~ 0
 HeadlightToggle
 $Comp
 L MRDT_Connectors:Molex_uF_S_02 Conn3
@@ -813,7 +811,7 @@ Wire Wire Line
 	6700 1800 6500 1800
 Text GLabel 7125 1900 2    50   Input ~ 0
 InteriorNeoPixel
-Text GLabel 9200 1475 0    50   Output ~ 0
+Text GLabel 8950 2975 0    50   Output ~ 0
 InteriorNeoPixel
 Wire Wire Line
 	6500 3200 6650 3200
@@ -882,11 +880,6 @@ NoConn ~ 9200 2075
 NoConn ~ 9200 2275
 NoConn ~ 9200 2375
 NoConn ~ 9200 2475
-NoConn ~ 9200 2575
-NoConn ~ 9200 2675
-NoConn ~ 9200 2775
-NoConn ~ 9200 2875
-NoConn ~ 9200 2975
 NoConn ~ 10425 1875
 NoConn ~ 10425 1775
 NoConn ~ 10425 1675
@@ -962,6 +955,23 @@ Text GLabel 7125 1175 2    50   Input ~ 0
 SpeakerNeoPixel
 Wire Wire Line
 	6500 1175 7125 1175
-Text GLabel 9200 1575 0    50   Output ~ 0
+Text GLabel 8950 2875 0    50   Output ~ 0
 SpeakerNeoPixel
+NoConn ~ 9200 1175
+NoConn ~ 9200 1275
+NoConn ~ 9200 1375
+NoConn ~ 9200 1475
+NoConn ~ 9200 1575
+Wire Wire Line
+	9075 2175 9075 4275
+Wire Wire Line
+	9200 2575 8950 2575
+Wire Wire Line
+	8950 2675 9200 2675
+Wire Wire Line
+	9200 2775 8950 2775
+Wire Wire Line
+	8950 2875 9200 2875
+Wire Wire Line
+	9200 2975 8950 2975
 $EndSCHEMATC
