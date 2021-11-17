@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name MultimediaAndBlackBoxBoard)(type Legacy)(uri C:/Users/volun/Documents/GitHub/Multimedia_Hardware/Documents/MultimediaAndBlackBoxBoard.lib)(options "")(descr ""))
-  (lib (name MultimediaAndBlackBoxBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/MultimediaAndBlackBoxBoard-rescue.lib)(options "")(descr ""))
-)
