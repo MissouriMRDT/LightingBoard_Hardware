@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BDJ2GA5WEFJ-Multimedia_IC
+#
+DEF BDJ2GA5WEFJ-Multimedia_IC U 0 40 Y Y 1 F N
+F0 "U" 0 -175 50 H V C CNN
+F1 "BDJ2GA5WEFJ-Multimedia_IC" 25 -250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 -600 300 -300 0 0 0 f
+X Outout 1 400 -450 100 L 50 39 1 1 O
+X Vo_s 2 400 -550 100 L 50 39 1 1 O
+X GND 3 -350 -350 100 R 50 39 1 1 w
+X Enable 6 -350 -550 100 R 50 39 1 1 I
+X Vcc 8 400 -350 100 L 50 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -621,9 +621,9 @@ Text GLabel 7125 3300 2    50   Input ~ 0
 UnderglowNeoPixel
 Text GLabel 7125 2625 2    50   Input ~ 0
 AutopanelNeoPixel
-Text GLabel 8950 2675 0    50   Output ~ 0
+Text GLabel 8950 3175 0    50   Output ~ 0
 AutopanelNeoPixel
-Text GLabel 8950 2775 0    50   Output ~ 0
+Text GLabel 10675 4775 2    50   Output ~ 0
 UnderglowNeoPixel
 Text GLabel 8950 2575 0    50   Output ~ 0
 HeadlightToggle
@@ -650,17 +650,6 @@ F 3 "" H 6300 4125 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R3
-U 1 1 616E8EA1
-P 7075 4650
-F 0 "R3" H 7143 4696 50  0000 L CNN
-F 1 "480" H 7143 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7075 4650 50  0001 C CNN
-F 3 "~" H 7075 4650 50  0001 C CNN
-	1    7075 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0120
 U 1 1 616E8EA7
 P 7075 4350
@@ -677,8 +666,6 @@ Wire Wire Line
 	7075 4300 7075 4350
 Wire Wire Line
 	7125 4500 7075 4500
-Wire Wire Line
-	7075 4500 7075 4550
 $Comp
 L Multimedia~IC:BDJ2GA5WEFJ U3
 U 1 1 616E8EB1
@@ -699,32 +686,26 @@ Wire Wire Line
 $Comp
 L power:+12VA #PWR0121
 U 1 1 616E8EBA
-P 7925 4250
-F 0 "#PWR0121" H 7925 4100 50  0001 C CNN
-F 1 "+12VA" H 7940 4423 50  0000 C CNN
-F 2 "" H 7925 4250 50  0001 C CNN
-F 3 "" H 7925 4250 50  0001 C CNN
-	1    7925 4250
+P 7925 4025
+F 0 "#PWR0121" H 7925 3875 50  0001 C CNN
+F 1 "+12VA" H 7925 4175 50  0000 C CNN
+F 2 "" H 7925 4025 50  0001 C CNN
+F 3 "" H 7925 4025 50  0001 C CNN
+	1    7925 4025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7875 4300 7925 4300
 Wire Wire Line
 	7925 4300 7925 4250
-Wire Wire Line
-	7950 4400 8100 4400
 Connection ~ 7950 4400
 Wire Wire Line
 	6500 3825 6875 3825
-Wire Wire Line
-	8100 3825 8100 4400
 Wire Wire Line
 	6875 4375 6875 3825
 Wire Wire Line
 	6500 4375 6875 4375
 Connection ~ 6875 3825
-Wire Wire Line
-	6875 3825 8100 3825
 $Comp
 L power:GND #PWR0122
 U 1 1 616E8ECA
@@ -747,10 +728,8 @@ Wire Wire Line
 Connection ~ 6650 3925
 Wire Wire Line
 	6650 3925 6775 3925
-Text GLabel 7075 4800 3    50   Input ~ 0
+Text GLabel 7075 4600 3    50   Input ~ 0
 HeadlightToggle
-Wire Wire Line
-	7075 4750 7075 4800
 $Comp
 L MRDT_Connectors:Molex_uF_S_03 Conn2
 U 1 1 61705912
@@ -811,7 +790,7 @@ Wire Wire Line
 	6700 1800 6500 1800
 Text GLabel 7125 1900 2    50   Input ~ 0
 InteriorNeoPixel
-Text GLabel 8950 2975 0    50   Output ~ 0
+Text GLabel 8975 1075 0    50   Output ~ 0
 InteriorNeoPixel
 Wire Wire Line
 	6500 3200 6650 3200
@@ -833,7 +812,6 @@ NoConn ~ 10425 5175
 NoConn ~ 10425 5075
 NoConn ~ 10425 4975
 NoConn ~ 10425 4875
-NoConn ~ 10425 4775
 NoConn ~ 10425 4675
 NoConn ~ 10425 4575
 NoConn ~ 10425 4475
@@ -842,7 +820,6 @@ NoConn ~ 9200 4375
 NoConn ~ 9200 4475
 NoConn ~ 9200 4575
 NoConn ~ 9200 4675
-NoConn ~ 9200 4775
 NoConn ~ 9200 4875
 NoConn ~ 9200 4975
 NoConn ~ 9200 5075
@@ -857,7 +834,6 @@ NoConn ~ 10425 3475
 NoConn ~ 10425 3375
 NoConn ~ 10425 3275
 NoConn ~ 10425 3175
-NoConn ~ 9200 3175
 NoConn ~ 9200 3275
 NoConn ~ 9200 3375
 NoConn ~ 9200 3475
@@ -889,7 +865,6 @@ NoConn ~ 10425 1375
 NoConn ~ 10425 1275
 NoConn ~ 10425 1175
 NoConn ~ 10425 1075
-NoConn ~ 9200 1075
 NoConn ~ 9200 1675
 NoConn ~ 9200 1775
 NoConn ~ 9200 1875
@@ -955,7 +930,7 @@ Text GLabel 7125 1175 2    50   Input ~ 0
 SpeakerNeoPixel
 Wire Wire Line
 	6500 1175 7125 1175
-Text GLabel 8950 2875 0    50   Output ~ 0
+Text GLabel 8975 4775 0    50   Output ~ 0
 SpeakerNeoPixel
 NoConn ~ 9200 1175
 NoConn ~ 9200 1275
@@ -967,11 +942,49 @@ Wire Wire Line
 Wire Wire Line
 	9200 2575 8950 2575
 Wire Wire Line
-	8950 2675 9200 2675
+	7075 4500 7075 4600
+NoConn ~ 9200 2675
+NoConn ~ 9200 2775
+NoConn ~ 9200 2875
+NoConn ~ 9200 2975
 Wire Wire Line
-	9200 2775 8950 2775
+	10675 4775 10425 4775
 Wire Wire Line
-	8950 2875 9200 2875
+	9200 4775 8975 4775
 Wire Wire Line
-	9200 2975 8950 2975
+	9200 3175 8950 3175
+Wire Wire Line
+	9200 1075 8975 1075
+$Comp
+L Device:C_Small C9
+U 1 1 6215CF88
+P 7925 4150
+F 0 "C9" H 8017 4196 50  0000 L CNN
+F 1 "10 uF" H 8017 4105 50  0000 L CNN
+F 2 "" H 7925 4150 50  0001 C CNN
+F 3 "~" H 7925 4150 50  0001 C CNN
+	1    7925 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 6215E928
+P 8325 4150
+F 0 "C10" H 8417 4196 50  0000 L CNN
+F 1 "10 uF" H 8417 4105 50  0000 L CNN
+F 2 "" H 8325 4150 50  0001 C CNN
+F 3 "~" H 8325 4150 50  0001 C CNN
+	1    8325 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 4025 7925 4050
+Wire Wire Line
+	8325 4400 8325 4250
+Wire Wire Line
+	7950 4400 8325 4400
+Wire Wire Line
+	8325 4050 8325 3825
+Wire Wire Line
+	6875 3825 8325 3825
 $EndSCHEMATC
