@@ -1,4 +1,4 @@
-18962982117911588
+18967609236356522
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56076,20 +56076,6 @@ Yellow 5381 Series LED
 0
 2
 2
-MRDT_12VoltBoard
-IND_SER2915L-682KL
-
-
-0
-3
-3
-MRDT_12VoltBoard
-Switch_OS102011MA1QN1
-
-
-0
-5
-5
 MRDT_Actives
 ABM3B-8.000MHZ-10-1-U-T
 5 mm x 3.2 mm
@@ -56125,6 +56111,13 @@ NX5032GA_Crystal
 0
 2
 2
+MRDT_Actives
+PMN280ENEAX
+
+
+0
+6
+6
 MRDT_Actives
 Q36SR12020NRFA
 
@@ -56495,7 +56488,7 @@ RJ45_Teensy
 
 0
 16
-16
+15
 MRDT_Connectors
 RP-SMA_Jack_Tru-Hole_Right-Angle
 
@@ -56734,6 +56727,13 @@ LQFP-64
 0
 64
 64
+MRDT_ICs
+TB67H400AFNG,EL
+HTSSOP-48_6.1x12.5mm_P0.5mm
+HTSSOP SO
+0
+49
+49
 MRDT_ICs
 USEQGSEAN8L180
 
@@ -57197,6 +57197,13 @@ MRDT_Silkscreens
 0
 0
 MRDT_Silkscreens
+2_100_silkscreen
+
+
+0
+0
+0
+MRDT_Silkscreens
 2_Dahlbot_2.0
 
 
@@ -57226,6 +57233,13 @@ MRDT_Silkscreens
 0
 MRDT_Silkscreens
 2_Shimble
+
+
+0
+0
+0
+MRDT_Silkscreens
+2_fire_silkscreen
 
 
 0
@@ -57289,6 +57303,13 @@ z_sig_Austin_Christman_22mmx8.3mm
 0
 MRDT_Silkscreens
 z_sig_Austin_Hill_Sig_22mmx9.3mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+z_sig_Brady_Davis_36mmx9mm
 
 
 0
