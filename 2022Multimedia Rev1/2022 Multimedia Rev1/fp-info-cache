@@ -1,4 +1,11 @@
-18982782022981348
+18982827767859983
+2022 Multimedia Rev1
+China5V8ABuck
+
+
+0
+4
+4
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56636,6 +56643,13 @@ Q36SR12020NRFA
 0
 8
 8
+MRDT_Devices
+TSR_1-2433
+
+
+0
+3
+3
 MRDT_Drill_Holes
 4_40_Hole
 
@@ -57303,6 +57317,20 @@ MRDT_Silkscreens
 0
 MRDT_Silkscreens
 2_fire_silkscreen
+
+
+0
+0
+0
+MRDT_Silkscreens
+PricklySig
+
+
+0
+0
+0
+MRDT_Silkscreens
+SmolCactus
 
 
 0
@@ -77273,13 +77301,6 @@ LEM Hall Effect Voltage transducer
 5
 5
 Silk Screens
-LoganSig
-
-
-0
-0
-0
-Silk Screens
 PricklySig
 
 
@@ -77288,27 +77309,6 @@ PricklySig
 0
 Silk Screens
 SmolCactus
-
-
-0
-0
-0
-Silk Screens
-sig_Logan_Dietz_5
-
-
-0
-0
-0
-Silk Screens
-trashcan
-
-
-0
-0
-0
-Silk Screens
-z_signature_Logan_D_27mmx14mm
 
 
 0
