@@ -1,21 +1,18 @@
-"Id","Designator","Package","Quantity","Designation","Supplier and ref",
-1,"G***","0_MRDT_Logo_40mm",1,"LOGO",,,
-2,"U4","TM4C129E_Launchpad_FULL_SMD_BOTTOM",1,"TM4C129E_Launchpad",,,
-3,"G***","SmolCactus",1,"LOGO",,,
-4,"G***","PricklySig",1,"LOGO",,,
-5,"G***","2_Nothing_3mm",1,"LOGO",,,
-6,"U3","SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm",1,"BDJ2GA5WEFJ",,,
-7,"U2,U1","OKI_Horizontal",2,"OKI",,,
-8,"R3","R_0603_1608Metric_Pad1.05x0.95mm_HandSolder",1,"480",,,
-9,"R2","R_0603_1608Metric_Pad1.05x0.95mm_HandSolder",1,"100",,,
-10,"R1","R_0603_1608Metric_Pad1.05x0.95mm_HandSolder",1,"47",,,
-11,"D2,D1","D_0603_1608Metric_Pad1.05x0.95mm_HandSolder",2,"Green",,,
-12,"Speaker Panel","MOLEX_uF_S_03_Horizontal",1,"Speaker Panel",,,
-13,"Underglow","MOLEX_uF_S_03_Horizontal",1,"Underglow",,,
-14,"Autonomy Panel","MOLEX_uF_S_03_Horizontal",1,"Auto Panel",,,
-15,"Headlight","MOLEX_uF_S_02_Horizontal",1,"Lights2",,,
-16,"Headlight","MOLEX_uF_S_02_Horizontal",1,"Lights",,,
-17,"Interior strip","MOLEX_uF_S_03_Horizontal",1,"Interior Lights",,,
-18,"Conn1","Anderson_3_Horizontal_Side_by_Side",1,"AndersonPP",,,
-19,"C8,C7,C3","C_0603_1608Metric_Pad1.05x0.95mm_HandSolder",3,"10uF",,,
-20,"C6,C5,C4,C2,C1","C_0603_1608Metric_Pad1.05x0.95mm_HandSolder",5,"10 uF",,,
+Id,Designator,Package,Designation,Item Name,Vendor,Quantity,Cost Per Item,Cost,URL
+1,"Conn2,Conn3,Conn2",Square_Anderson_2_H_Side_By_Side,Black Housing,Anderson Power Products 1327 series PP15/30/45 Powerpole Connector Colored Housings,Powerwerx,3, $0.55 , $1.65 ,https://powerwerx.com/anderson-powerpole-colored-housings
+2,"Conn2,Conn3,Conn3",Square_Anderson_2_H_Side_By_Side,Red Housing,Anderson Power Products 1327 series PP15/30/45 Powerpole Connector Colored Housings,Powerwerx,3, $0.55 , $1.65 ,https://powerwerx.com/anderson-powerpole-colored-housings
+3,"Conn2,Conn3,Conn4",Square_Anderson_2_H_Side_By_Side,Contact,Anderson Power 1336G1 Printed Circuit Board High Power 45 Amp Horizontal Bottom Contact,Powerwerx,6, $0.92 , $5.52 ,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
+4,Conn2,Square_Anderson_3_H_Side_By_Side,Black Housing,Anderson Power Products 1327 series PP15/30/45 Powerpole Connector Colored Housings,Powerwerx,1, $0.55 , $0.55 ,https://powerwerx.com/anderson-powerpole-colored-housings
+5,Conn1,Square_Anderson_3_H_Side_By_Side,Red Housing,Anderson Power Products 1327 series PP15/30/45 Powerpole Connector Colored Housings,Powerwerx,1, $0.55 , $0.55 ,https://powerwerx.com/anderson-powerpole-colored-housings
+6,Conn0,Square_Anderson_3_H_Side_By_Side,Violet Housing,Anderson Power Products 1327 series PP15/30/45 Powerpole Connector Colored Housings,Powerwerx,1, $0.67 , $0.67 ,https://powerwerx.com/anderson-powerpole-colored-housings
+7,Conn1,Square_Anderson_3_H_Side_By_Side,Contact,Anderson Power 1336G1 Printed Circuit Board High Power 45 Amp Horizontal Bottom Contact,Powerwerx,3, $0.92 , $2.76 ,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
+8,Data,MOLEX_uF_S_02_Horizontal,Neopixel Power,WM4900-ND,Digikey,1, $0.82 , $0.82 ,https://www.digikey.com/en/products/detail/molex/0705530001/114951?s=N4IgTCBcDaIOoFkAsBOADGgtAOQCIgF0BfIA
+9,U4,TM4C129E_Launchpad_FULL_SMD_BOTTOM,TM4C129E_Launchpad,296-37267-ND,Digikey,1, $29.99 , $29.99 ,https://www.digikey.com/en/products/detail/texas-instruments/EK-TM4C1294XL/4725808
+10,U2,China5V8ABuck,China5V8ABuck,XWST DC 12V 24V Step Down to 5V 8A 40W,Amazon,1, $16.99 , $16.99 ,https://www.amazon.com/Converter-Voltage-Regulator-Waterproof-Transformer/dp/B09BQLNG27/ref=sr_1_5?crid=2350W9VPIH783&keywords=12v%2Bto%2B5v%2B8a%2Bconverter&qid=1647055820&sprefix=12v%2Bto%2B5v%2B8a%2Bconverter%2Caps%2C99&sr=8-5&th=1
+11,U1,TSR_1-2433,TSR1-2433,1951-2742-ND,Digikey,1, $5.80 , $5.80 ,https://www.digikey.com/en/products/detail/traco-power/TSR-1-2433/9383776
+12,"C10,C9,C4,C1",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,10 uF,399-C0603C106M8PAC7411CT-ND,Digikey,4, $0.46 , $1.84 ,https://www.digikey.com/en/products/detail/kemet/C0603C106M8PAC7411/12701345?s=N4IgTCBcDaIMwE4EFoDCAGAbOuqCMWAsgBwAKAgqgOwAseeqAKsgHIAiIAugL5A
+13,U3,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm,BDJ2GA5WEFJ,BDJ2GA5WEFJ-E2CT-ND,Digikey,1, $0.71 , $0.71 ,https://www.digikey.com/en/products/detail/rohm-semiconductor/BDJ2GA5WEFJ-E2/3693283?s=N4IgTCBcDaIEIBEBSYDiBBArAdQKIDEkQBdAXyA
+14,R2,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,510,RHM510DCT-ND,Digikey,1, $0.10 , $0.10 ,https://www.digikey.com/en/products/detail/rohm-semiconductor/ESR03EZPJ511/1762937
+15,R1,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,330,RHM330DCT-ND,Digikey,1, $0.10 , $0.10 ,https://www.digikey.com/en/products/detail/rohm-semiconductor/ESR03EZPJ331/1762730
+16,"D2,D1",D_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Green,160-1446-1-ND,Digikey,2, $0.14 , $0.28 ,https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C191KGKT/386834
+17,C7,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,10uF,399-C0603C106M8PAC7411CT-ND,Digikey,1, $0.32 , $0.32 ,https://www.digikey.com/en/products/detail/kemet/C0603C106M8PAC7411/12701345?s=N4IgTCBcDaIMwE4EFoDCAGAbOuqCMWAsgBwAKAgqgOwAseeqAKsgHIAiIAugL5A
