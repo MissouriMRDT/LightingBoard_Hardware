@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "MultimediaBoard2023")(type "KiCad")(uri "C:/Users/natalie/Documents/GitHub/2022Multimedia/Multimedia_Hardware/Libraries/Footprints")(options "")(descr ""))
+  (lib (name "Signature")(type "KiCad")(uri "C:/Users/natalie/Documents/GitHub/2022Multimedia/Multimedia_Hardware/Libraries/Signature")(options "")(descr ""))
 )
