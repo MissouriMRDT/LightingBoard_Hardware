@@ -697,7 +697,7 @@
 
   (footprint "Signature:z-sig-Natalie-Althof" (layer "F.Cu")
     (tedit 0) (tstamp b7b8718e-cfae-4eee-978f-7170a843339e)
-    (at 69.596 113.284 90)
+    (at 64.516 112.268 90)
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 9.652 90) (layer "Dwgs.User")
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -9190,7 +9190,7 @@
 
   (footprint "MRDT_Silkscreens:0_MRDT_Logo_10mm" (layer "F.Cu")
     (tedit 5AA4CEEB) (tstamp f6772728-4a06-496f-a588-a6b604e97c38)
-    (at 87.376 107.696)
+    (at 79.248 108.712)
     (tags "Logo, MRDT")
     (attr through_hole)
     (fp_text reference "G***" (at -1.143 6.4008) (layer "Dwgs.User") hide
@@ -10254,8 +10254,8 @@
   (gr_text "3.3V" (at 91.44 61.468) (layer "F.SilkS") (tstamp 4c6d42c2-28b3-49a5-97b8-2c23020bde22)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Multimedia Board, 2023 Rev 1\nMars Rover Team\nNatalie Althof" (at 70.104 107.696) (layer "F.SilkS") (tstamp 760fbbfb-54e4-4ab1-b577-f567d7ca79c2)
-    (effects (font (size 1 1) (thickness 0.15)))
+  (gr_text "Multimedia Board, Rev 1\nMars Rover Design Team\nMissouri S&T, 2023\nNatalie Althof" (at 58.928 105.156) (layer "F.SilkS") (tstamp 760fbbfb-54e4-4ab1-b577-f567d7ca79c2)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
 
   (segment (start 105.375 64.805) (end 111.76 58.42) (width 0.254) (layer "F.Cu") (net 1) (tstamp 006bb8a4-bcc7-4f13-9fae-24868062b39a))
